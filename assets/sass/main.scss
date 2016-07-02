@@ -3,7 +3,7 @@
 
 $light: #f2f2f2;
 $dark: #333;
-$main: #c0392b;
+$main: #e74c3c;
 $grey: darken($light, 5%);
 
 html {
@@ -23,18 +23,20 @@ body {
 }
 
 #superglobal {
-    border-top: 4px solid $main;
+    //border-top: 4px solid $main;
 }
 
 #global {
     width: 75%;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
 #header {
-    height: 80px;
-    line-height: 80px;
+    padding: 60px 20px;
+    background: $main;
+    color: $light;
+    text-align: center;
 }
 
 #content {
@@ -68,7 +70,7 @@ h4 {
     font-style: italic;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
     margin: 10px 15px;
 }
 
@@ -105,7 +107,8 @@ li {
     vertical-align: top;
     width: 33.33%;
     margin-right: -4px;
-    text-align: left;
+    text-align: justify;
+    transition: opacity 1s ease;
 
     a {
         color: $dark;
@@ -118,7 +121,6 @@ li {
     div {
         margin: 5px;
         padding: 20px;
-
         border: 1px solid $grey;
         background: #fff;
         @include clearfix();
@@ -176,7 +178,7 @@ li {
     padding: 20px;
     border: 1px solid $grey;
     background: #fff;
-    text-align: left;
+    text-align: justify;
 
     .avatar {
         display: block;
