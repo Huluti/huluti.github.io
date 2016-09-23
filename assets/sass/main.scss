@@ -1,52 +1,116 @@
 @import "compass";
 @import "compass/reset";
 
-$light: #f2f2f2;
-$dark: #333;
-$main: #e74c3c;
-$grey: darken($light, 5%);
+@import "variables";
+@import "mixins";
+@import "grid";
 
-html {
+// Box sizing
+
+*, *:before, *:after {
     @include box-sizing(border-box);
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+// General
 
 body {
-    background: $light;
     color: $dark;
-    line-height: 1.2em;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
 }
 
-#superglobal {
-    //border-top: 4px solid $main;
-}
+// Menu
 
-#global {
-    width: 75%;
-    margin: 0 auto;
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $menu;
     text-align: center;
+
+    ul {
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: $light;
+
+                i {
+                    font-size: 24px;
+                }
+
+                span {
+                    display: none;
+                }
+
+                &:hover {
+                    background: darken($menu, 5%);
+                }
+
+                &.active {
+                    background: darken($menu, 10%);
+                }
+            }
+        }
+    }
 }
 
-#header {
-    padding: 60px 20px;
-    background: $main;
-    color: $light;
-    text-align: center;
-}
-
-#content {
-    padding: 20px;
-}
+// Structure
 
 .section {
-    margin: 20px 0;
-    @include clearfix();
+    padding: 100px 0;
+    text-align: center;
 }
+
+#home, #projects, #contact {
+    background-color: $light;
+    color: $dark;
+}
+
+ #skills, #references {
+    background-color: $main;
+    color: $light;
+}
+
+// Section 0
+
+.avatar {
+    margin-bottom: 10px;
+    border-radius: 100px;
+}
+
+#about {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#social {
+    .btn-social {
+        margin: 0 5px;
+        font-size: 32px;
+    }
+}
+
+// Section 2
+
+.skill {
+    display: inline-block;
+    margin: 5px;
+    background: $light;
+
+    p {
+        padding: 5px 10px;
+        color: $dark;
+        font-weight: bold;
+    }
+}
+
+// Text
 
 h1 {
     font-size: 64px;
@@ -55,164 +119,143 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 48px;
     font-family: 'Indie Flower', cursive;
     font-style: italic;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
 h4 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+h5 {
+    margin: 10px 0;
     font-size: 18px;
     font-style: italic;
 }
 
 h1, h2, h3, h4 {
-    margin: 10px 15px;
+    margin-bottom: 30px;
 }
 
-h3::first-letter {
-    color: $main;
+p {
+    line-height: 1.6em;
 }
 
 a {
-    color: $main;
-    text-decoration: none;
-}
-
-a:hover {
+    color: $dark;
     text-decoration: underline;
-}
 
-li {
-    display: inline-block;
-    width: auto;
-    margin-top: 5px;
-    border: 1px solid $grey;
-    background: #fff;
-
-    a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-    }
-}
-
-.project {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    margin-right: -4px;
-    text-align: justify;
-    transition: opacity 1s ease;
-
-    a {
-        color: $dark;
-    }
-
-    a:hover {
+    &:hover {
         text-decoration: none;
     }
-
-    div {
-        margin: 5px;
-        padding: 20px;
-        border: 1px solid $grey;
-        background: #fff;
-        @include clearfix();
-    }
-
-    img {
-        width: 100px;
-        float: left;
-        padding: 0 15px 15px 0;
-    }
-
-    h4 {
-        color: $main;
-    }
-
-    p a{
-        display: block;
-        float: right;
-        margin-top: 10px;
-    }
 }
 
-.project:hover {
-    opacity: 0.6;
-    cursor: pointer;
+b {
+    font-weight: bold;
 }
 
-.domain {
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+}
+
+// Buttons
+
+.btn {
     display: inline-block;
-    vertical-align: top;
-    padding: 10px;
-    border-right: 2px dotted $grey;
+    border-radius: 100px;
+}
 
-    .skill {
-        display: inline-block;
-        vertical-align: top;
-        margin: 5px;
-        background: $main;
+.btn-social {
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+    border: 1px solid $dark;
+}
 
-        p {
-            padding: 5px;
-            color: $light;
-            font-weight: bold;
+.btn-link {
+    margin: 10px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    border: 1px solid $dark;
+
+    &:hover {
+        border-color: #2c3e50;
+        background: #2c3e50;
+        color: $light;
+    }
+}
+
+.btn-secondary {
+    border: 1px solid $light;
+    color: $light;
+
+    &:hover {
+        border-color: $light;
+        background: $light;
+        color: $dark;
+    }
+}
+
+// Social
+
+.github:hover {
+    border-color: #333;
+    background-color: #333;
+    color: #fff;
+}
+
+// Responsive
+
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        padding-left: $menu_w;
+    }
+
+    #menu {
+        top: 0;
+        bottom: 0;
+        width: $menu_w;
+        transition: width 1s;
+        text-align: left;
+        overflow: hidden;
+
+        ul li {
+            display: block;
+
+            a {
+                white-space: nowrap;
+                text-transform: uppercase;
+
+                i, span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                i {
+                    width: 40px;
+                }
+            }
         }
-    }
-}
-.domain:last-child {
-    border-right: none;
-}
 
-#about {
-    display: block;
-    width: 60%;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid $grey;
-    background: #fff;
-    text-align: justify;
-
-    .avatar {
-        display: block;
-        margin: 10px auto;
-        margin-top: -50px;
-        width: 90px;
-        height: 90px;
-        border-radius: 90px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-
-    #global {
-        width: 95%;
-    }
-
-    .project {
-        display: block;
-        width: 100%;
-    }
-
-    .domain {
-        display: block;
-        width: 100%;
-        border-right: none;
-    }
-
-    #about {
-        width: 100%;
-    }
-
-    li {
-        display: block;
-        width: 100%;
+        &:hover {
+            width: 250px;
+        }
     }
 }
