@@ -27,7 +27,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: $menu;
+    background-color: $menu;
     text-align: center;
 
     ul {
@@ -49,11 +49,11 @@ body {
                 }
 
                 &:hover {
-                    background: darken($menu, 5%);
+                    background-color: darken($menu, 5%);
                 }
 
                 &.active {
-                    background: darken($menu, 10%);
+                    background-color: darken($menu, 10%);
                 }
             }
         }
@@ -101,7 +101,7 @@ body {
 .skill {
     display: inline-block;
     margin: 5px;
-    background: $light;
+    background-color: $light;
 
     p {
         padding: 5px 10px;
@@ -196,7 +196,7 @@ img {
 
     &:hover {
         border-color: #2c3e50;
-        background: #2c3e50;
+        background-color: #2c3e50;
         color: $light;
     }
 }
@@ -207,7 +207,7 @@ img {
 
     &:hover {
         border-color: $light;
-        background: $light;
+        background-color: $light;
         color: $dark;
     }
 }
@@ -229,9 +229,9 @@ img {
 // Social
 
 .github:hover {
-    border-color: #333;
-    background-color: #333;
-    color: #fff;
+    border-color: $dark;
+    background-color: $dark;;
+    color: #ffffff;
 }
 
 // Responsive
