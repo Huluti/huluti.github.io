@@ -63,7 +63,7 @@ body {
 // Structure
 
 .section {
-    padding: 100px 0;
+    padding: 100px 40px;
     text-align: center;
 }
 
@@ -105,7 +105,6 @@ body {
 
     p {
         padding: 5px 10px;
-        color: $dark;
         font-weight: bold;
     }
 }
@@ -209,6 +208,20 @@ img {
     &:hover {
         border-color: $light;
         background: $light;
+        color: $dark;
+    }
+}
+
+// Cards
+
+.card {
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background-color: #ffffff;
+    color: $dark;
+
+    h3, h4, h5, p {
         color: $dark;
     }
 }
