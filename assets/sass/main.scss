@@ -27,8 +27,10 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: $menu;
+    z-index: 1;
+    background-color: $light;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
     ul {
         li {
@@ -38,7 +40,7 @@ body {
                 display: block;
                 padding: 10px 15px;
                 text-decoration: none;
-                color: $light;
+                color: $dark;
 
                 i {
                     font-size: 24px;
@@ -49,11 +51,13 @@ body {
                 }
 
                 &:hover {
-                    background-color: darken($menu, 5%);
+                    background-color: $dark;
+                    color: $light;
                 }
 
                 &.active {
-                    background-color: darken($menu, 10%);
+                    background-color: darken($dark, 5%);
+                    color: $light;
                 }
             }
         }
