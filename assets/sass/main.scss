@@ -222,9 +222,14 @@ img {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background-color: #ffffff;
     color: $dark;
+    transition: background-color 0.5s;
 
     h3, h4, h5, p {
         color: $dark;
+    }
+
+    &:hover {
+        background-color: $light;
     }
 }
 
