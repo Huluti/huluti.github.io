@@ -1,233 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hugo Posnic, Étudiant &amp; apprenti développeur - Portfolio</title>
     <meta name="description" content="Étudiant en licence informatique, développeur HTML, PHP et Python.">
-    <link rel="icon" type="image/png" href="assets/img/huluti.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Indie+Flower|Paytone+One">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="card" type="image/png" href="assets/img/huluti.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One|Source+Sans+Pro">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 </head>
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="#home"><i class="fa fa-user" aria-hidden="true"></i> <span>Accueil</span></a></li><!--
-            --><li><a href="#skills"><i class="fa fa-briefcase" aria-hidden="true"></i> <span>Compétences</span></a></li><!--
-            --><li><a href="#projects"><i class="fa fa-code" aria-hidden="true"></i> <span>Projets</span></a></li><!--
-            --><li><a href="#references"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span>Références</span></a></li><!--
-            --><li><a href="#contact"><i class="fa fa-at" aria-hidden="true"></i> <span>Contact</span></a></li>
-        </ul>
-    </nav>
-    <div id="wrapper">
-        <div class="section" id="home">
-            <div class="row">
-                <div class="column-12 animated bounce">
-                    <img src="assets/img/huluti.png" class="avatar">
-                    <h1>Hugo Posnic</h1>
-                    <h2>Étudiant &amp; apprenti développeur</h2>
-                    <p id="about">
-                        <b>Étudiant</b> en première année de licence informatique.<br>
-                        <b>Développeur</b> à mes heures perdues.<br>
-                        Fervent supporter du <b>logiciel libre</b>.
-                    </p>
-                    <p id="social">
-                        <a class="btn btn-social github" href="https://github.com/Huluti"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </p>
+    <header id="header">
+        <div id="social">
+            <a href="https://dribbble.com/huluti"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            <a href="https://github.com/Huluti"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div id="text">
+            <h1 id="lead">Hugo Posnic</h1>
+            <h2>Étudiant & apprenti développeur</h2>
+        </div>
+    </header>
+    <div id="content">
+        <div id="header-avatar"></div>
+
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="section">
+                <h3>Web</h3>
+                <div class="card"><i class="skill devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="card"><i class="skill devicon-css3-plain colored"></i><span>CSS3</span></div>
+                <div class="card"><i class="skill devicon-javascript-plain colored"></i><span>Javascript</span></div>
+                <div class="card"><i class="skill devicon-php-plain colored"></i><span>PHP</span></div>
+            </div>
+            <div class="section">
+                <h3>CMS / Frameworks</h3>
+                <div class="card"><i class="skill devicon-wordpress-plain colored"></i><span>Wordpress</span></div>
+                <div class="card"><i class="skill devicon-laravel-plain colored"></i><span>Laravel</span></div>
+            </div>
+            <div class="section">
+                <h3>Logiciel</h3>
+                <div class="card"><i class="skill devicon-python-plain colored"></i><span>Python</span></div>
+            </div>
+            <div class="section">
+                <h3>Outils</h3>
+                <div class="card"><i class="skill devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="card"><i class="skill devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/coulr.png" alt="Coulr">
+                    <span>Coulr</span>
+                    <p class="project-description">Boite à couleurs pour les dévéloppeurs ou les bidouilleurs.</p>
+                    <a href="https://github.com/Huluti/Coulr" class="btn">Visiter</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/tux.png" alt="TuxHomepage">
+                    <span>TuxHomepage</span>
+                    <p class="project-description">Page d'accueil aux couleurs des distributions Linux les plus populaires.</p>
+                    <a href="https://tuxhomepage.xyz" class="btn">Visiter</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/debreate.png" alt="Debreate-web">
+                    <span>Debreate-web</span>
+                    <p class="project-description">Site web du logiciel Debreate.</p>
+                    <a href="https://antumdeluge.github.io/debreate-web" class="btn">Visiter</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/swiftea.png" alt="Swiftea">
+                    <span>Swiftea</span>
+                    <p class="project-description">Crawler open-source.</p>
+                    <a href="https://github.com/Swiftea" class="btn">Visiter</a>
                 </div>
             </div>
         </div>
 
-        <div class="section" id="skills">
-            <h3>Compétences</h3>
-            <div class="row">
-                <p>Passionné par l'informatique, je maitrise particulièrement le développement web et logiciel.</p>
-                <div class="column-4">
-                    <h4>Développement web</h4>
-                    <div class="card">
-
-                        <h5>Front-End</h5>
-                        <div class="skill">
-                            <p>HTML5 / CSS3</p>
-                        </div>
-
-                        <div class="skill">
-                            <p>SASS</p>
-                        </div>
-
-                        <div class="skill">
-                            <p>Javascript</p>
-                        </div>
-
-                        <div class="skill">
-                            <p>jQuery</p>
-                        </div>
-
-                        <h5>Back-End</h5>
-
-                        <div class="skill">
-                            <p>PHP</p>
-                        </div>
-
-                        <div class="skill">
-                            <p>Wordpress</p>
-                        </div>
-
-                        <div class="skill">
-                            <p>Laravel</p>
-                        </div>
-
-                        <h5>Site web</h5>
-                        <div class="skill">
-                            <p>Référencement</p>
-                        </div>
-                        <div class="skill">
-                            <p>Hébergement</p>
-                        </div>
-                    </div>
+        <div class="container">
+            <h2>Références</h2>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/coulr.jpeg" alt="Article Coulr">
+                    <span>Article de «La Vache Libre» à propos de Coulr</span>
+                    <a href="http://la-vache-libre.org/coulr-une-palette-de-couleurs-tres-sympathique-pour-les-developpeurs-et-les-designers" class="btn">Lire l'article</a>
                 </div>
-
-                <div class="column-4">
-                    <h4>Développement logiciel</h4>
-                    <div class="card">
-                        <h5>Technologies</h5>
-
-                        <div class="skill">
-                            <p>Python</p>
-                        </div>
-
-                        <h5>Bibliothèques graphiques</h5>
-
-                        <div class="skill">
-                            <p>Gtk</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/startpage.jpeg" alt="Startpage HandyLinux">
+                    <span>Startpage de la distribution HandyLinux basée sur TuxHomepage</span>
+                    <a href="http://start.handylinux.org/" class="btn">Voir la page</a>
                 </div>
-
-                <div class="column-4">
-                    <h4>Méthodologie</h4>
-                    <div class="card">
-                        <div class="skill">
-                            <p>Git</p>
-                        </div>
-
-                        <div class="skill">
-                            <p><abbr title="Développement piloté par les tests">TDD</abbr></p>
-                        </div>
-
-                        <h5>Base de données</h5>
-                        <div class="skill">
-                            <p>SQL</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <img src="assets/img/scott_viger.jpeg" alt="Vidéo TuxHomepage">
+                    <span>Vidéo de présentation de TuxHomepage par Scott Viger</span>
+                    <a href="https://www.youtube.com/watch?v=bGB4sFiOa2I" class="btn">Regarder la vidéo</a>
                 </div>
             </div>
         </div>
 
-        <div class="section" id="projects">
-            <h3>Projets</h3>
-            <div class="row">
-                <p>Que mes projets soient personnels ou réalisés en collaboration, ils me permettent d'acquérir de l'expérience.</p>
-                <div class="column-3">
-                    <div class="card">
-                        <img src="assets/img/coulr.png" alt="Coulr">
-                        <h4>Coulr</h4>
-                        <p>
-                            Boite à couleurs pour les dévéloppeurs ou les bidouilleurs.
-                        </p>
-                        <a class="btn btn-link btn-primary" href="https://github.com/Huluti/Coulr"><i class="fa fa-external-link" aria-hidden="true"></i> Visiter</a>
-                    </div>
-                </div>
-                <div class="column-3">
-                    <div class="card">
-                        <img src="assets/img/tux.png" alt="TuxHomepage">
-                        <h4>TuxHomepage</h4>
-                        <p>
-                            Page d'accueil aux couleurs des distributions Linux les plus populaires.
-                        </p>
-                        <a class="btn btn-link btn-primary" href="https://huluti.github.io/TuxHomepage"><i class="fa fa-external-link" aria-hidden="true"></i> Visiter</a>
-                    </div>
-                </div>
-                <div class="column-3">
-                    <div class="card">
-                        <img src="assets/img/debreate.png" alt="Debreate-web">
-                        <h4>Debreate-web</h4>
-                        <p>
-                            Site web du logiciel Debreate.
-                        </p>
-                        <a class="btn btn-link btn-primary" href="https://antumdeluge.github.io/debreate-web"><i class="fa fa-external-link" aria-hidden="true"></i> Visiter</a>
-                    </div>
-                </div>
-                <div class="column-3">
-                    <div class="card">
-                        <img src="assets/img/swiftea.png" alt="Swiftea">
-                        <h4>Swiftea</h4>
-                        <p>
-                            Crawler open-source.
-                        </p>
-                        <a class="btn btn-link btn-primary" href="https://github.com/Swiftea"><i class="fa fa-external-link" aria-hidden="true"></i> Visiter</a>
-                    </div>
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="section">
+                <h3>Email</h3>
+                <div class="card">
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> hugo.posnic@gmail.com</p>
                 </div>
             </div>
-        </div>
-
-        <div class="section" id="references">
-            <h3>Références</h3>
-            <div class="row">
-                <p>Découvrez comment mes projets ont pu êtres réutilisés et ce que les internautes pensent de mes projets.</p>
-                <div class="column-4">
-                    <div class="card">
-                        <h4>Article de «La Vache Libre» à propos de Coulr</h4>
-                        <img src="assets/img/coulr.jpeg">
-                        <br><br>
-                        <a class="btn btn-link btn-primary" href="http://la-vache-libre.org/coulr-une-palette-de-couleurs-tres-sympathique-pour-les-developpeurs-et-les-designers"><i class="fa fa-external-link" aria-hidden="true"></i> Lire l'article</a>
-                    </div>
+            <div class="section">
+                <h3>Adresse</h3>
+                <div class="card">
+                    <p><i class="fa fa-map" aria-hidden="true"></i> Orléans, France</p>
                 </div>
-                <div class="column-4">
-                    <div class="card">
-                        <h4>Startpage de la distribution HandyLinux basée sur TuxHomepage</h4>
-                        <img src="assets/img/startpage.jpeg">
-                        <br><br>
-                        <a class="btn btn-link btn-primary" href="http://start.handylinux.org"><i class="fa fa-external-link" aria-hidden="true"></i> Voir la page</a>
-                    </div>
-                </div>
-                <div class="column-4">
-                    <div class="card">
-                        <h4>Vidéo de présentation de TuxHomepage par <a href="https://www.youtube.com/channel/UChH5h0EnBa4RpFCYe3nME5A">Scott Viger</a></h4>
-                        <img src="assets/img/scott_viger.jpeg">
-                        <br><br>
-                        <a class="btn btn-link btn-primary" href="https://www.youtube.com/watch?v=bGB4sFiOa2I"><i class="fa fa-youtube-play" aria-hidden="true"></i> Voir la vidéo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section" id="contact">
-            <h3>Contact</h3>
-
-            <div class="row">
-                <p>Une remarque, une question, un problème ? N'hésitez pas à me contacter.</p>
-                <div class="column-3"></div>
-                <div class="column-3">
-                    <h4>Email</h4>
-                    <div class="card">
-                        <p><i class="fa fa-envelope" aria-hidden="true"></i> hugo.posnic@gmail.com<br></p>
-                    </div>
-                </div>
-                <div class="column-3">
-                    <h4>Adresse</h4>
-                    <div class="card">
-                        <p><i class="fa fa-map" aria-hidden="true"></i> Orléans, France</p>
-                    </div>
-                </div>
-                <div class="column-3"></div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="assets/js/main.min.js"></script>
 </body>
 </html>
