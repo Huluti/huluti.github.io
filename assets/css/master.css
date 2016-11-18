@@ -156,6 +156,11 @@ h3 {
 	font-size: 7rem;
 }
 
+.language {
+	display: inline-block;
+	margin-top: 10px;
+}
+
 .card span {
 	font-weight: bold;
 }
