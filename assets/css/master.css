@@ -60,7 +60,7 @@ body {
 	position: relative;
 	z-index: 1;
 	height: 400px;
-	background: url('../img/header.png') #ff932a;
+	background: url('../img/pattern.png') #ff932a;
 	color: #ffffff;
 	text-align: center;
 }
@@ -107,6 +107,18 @@ body {
 	border-radius: 100px;
 	border: 8px solid #ffffff;
 	background-image: url('../img/huluti.png');
+}
+
+#footer {
+	height: 200px;
+	line-height: 200px;
+	background: url('../img/pattern.png') #ff932a;
+	color: #ffffff;
+	text-align: center;
+}
+
+#footer h2 {
+	margin-bottom: 0;
 }
 
 img {
@@ -175,7 +187,7 @@ h3 {
 	margin: 10px 0 0 0;
 	padding: 10px 15px;
 	border-radius: 4px;
-	background: url('../img/header.png') center #ff932a;
+	background: url('../img/pattern.png') center #ff932a;
 	color: #ffffff;
 	text-decoration: none;
 }
