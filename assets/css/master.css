@@ -175,6 +175,10 @@ h3 {
 	text-decoration: none;
 }
 
+.btn:hover {
+	opacity: 0.8;
+}
+
 @media screen and (min-width: 1024px){
 	.animate-spin {
 		transition: transform .8s ease-in-out;
