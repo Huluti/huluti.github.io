@@ -108,15 +108,19 @@ body {
 /* FOOTER */
 
 #footer {
+	position: relative;
 	height: 200px;
-	line-height: 200px;
 	background: url('../img/pattern.png') #ff932a;
 	color: #ffffff;
-	text-align: center;
 }
 
 #footer h2 {
-	margin-bottom: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	text-align: center;
 }
 
 /* TEXT */
