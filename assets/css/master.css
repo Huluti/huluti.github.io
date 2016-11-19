@@ -56,6 +56,8 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* HEADER */
+
 #header {
 	position: relative;
 	z-index: 1;
@@ -65,12 +67,12 @@ body {
 	text-align: center;
 }
 
-#lead {
-	margin-bottom: 20px;
-	font-size: 4rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: 'Fredoka One', cursive;
+#header-content {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
 }
 
 #social {
@@ -79,21 +81,15 @@ body {
 }
 
 #social a {
+	margin: 0 5px;
 	display: inline-block;
 	color: #ffffff;
 }
 
-#text {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	transform: translateY(-50%);
-}
+/* CONTENT */
 
 #content {
-	width: 90%;
-	margin: 0 auto;
+	padding: 0 20px;
 	text-align: center;
 }
 
@@ -109,6 +105,8 @@ body {
 	background-image: url('../img/huluti.png');
 }
 
+/* FOOTER */
+
 #footer {
 	height: 200px;
 	line-height: 200px;
@@ -121,14 +119,17 @@ body {
 	margin-bottom: 0;
 }
 
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
+/* TEXT */
 
 h1, h2, h3 {
 	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Fredoka One', cursive;
 }
 
 h2 {
@@ -141,22 +142,29 @@ h3 {
 	font-size: 1.6rem;
 }
 
-.container {
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* ELEMENTS */
+
+.section {
 	margin-bottom: 40px;
 }
 
-.section {
-	margin: 20px;
+.block {
+	margin: 0 20px 20px 20px;
 }
 
 .card {
-	margin: 10px 10px;
+	margin: 10px;
 	padding: 20px;
 	border-radius: 4px;
 	background-color: #ffffff;
 	font-size: 1.4rem;
 	word-wrap: break-word;
-
 }
 
 .skill, .card img {
@@ -182,6 +190,8 @@ h3 {
 	line-height: 1.2em;
 }
 
+/* BTNS */
+
 .btn {
 	display: block;
 	margin: 10px 0 0 0;
@@ -196,6 +206,38 @@ h3 {
 	opacity: 0.8;
 }
 
+/* TIMELINE */
+
+#timeline li {
+	margin: 20px 30px;
+}
+
+.timeline-panel {
+	padding: 20px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	text-align: left;
+}
+
+.timeline-badge {
+	display: none;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	border-radius: 50px;
+	line-height: 50px;
+	font-size: 1.4rem;
+	text-align: center;
+	background-color: #cccccc;
+	color: #ffffff;
+}
+
+.timeline-badge.primary {
+	background-color: #ff932a !important;
+}
+
+/* DESKTOP */
+
 @media screen and (min-width: 1024px){
 	.animate-spin {
 		transition: transform .8s ease-in-out;
@@ -204,7 +246,7 @@ h3 {
 		transform: rotate(360deg);
 	}
 
-	.section {
+	.block {
 		display: inline-block;
 	}
 
@@ -213,4 +255,14 @@ h3 {
 		vertical-align: top;
 		max-width: 280px;
 	}
+
+	.timeline-panel, .timeline-badge {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.timeline-panel {
+		width: 40%;
+	}
+
 }
