@@ -89,7 +89,7 @@ body {
 /* CONTENT */
 
 #content {
-	padding: 0 20px;
+
 	text-align: center;
 }
 
@@ -158,17 +158,21 @@ img {
 	margin-bottom: 40px;
 }
 
-.block {
-	margin: 0 20px 20px 20px;
+.card:not(:last-child), #skills .block:not(:last-child), #contact .block:not(:last-child) {
+	margin-bottom: 20px;
 }
 
 .card {
-	margin: 10px;
+	margin: 0 10px;
 	padding: 20px;
 	border-radius: 4px;
 	background-color: #ffffff;
 	font-size: 1.4rem;
 	word-wrap: break-word;
+}
+
+.card span {
+	font-weight: bold;
 }
 
 .skill, .card img {
@@ -182,11 +186,7 @@ img {
 
 .language {
 	display: inline-block;
-	margin-top: 10px;
-}
-
-.card span {
-	font-weight: bold;
+	margin-top: 20px;
 }
 
 .project-description {
@@ -198,7 +198,7 @@ img {
 
 .btn {
 	display: block;
-	margin: 20px 0 10px 0;
+	margin-top: 20px;
 	padding: 10px 15px;
 	border-radius: 4px;
 	background: url('../img/pattern.png') center #ff932a;
@@ -213,7 +213,7 @@ img {
 /* TIMELINE */
 
 #timeline li {
-	margin: 20px 30px;
+	margin: 0 10px 20px 10px;
 }
 
 .timeline-panel {
@@ -250,6 +250,10 @@ img {
 		transform: rotate(360deg);
 	}
 
+	.card:not(:last-child), #contact .block:not(:last-child) {
+		margin-bottom: 0px;
+	}
+
 	.block {
 		display: inline-block;
 	}
@@ -268,5 +272,4 @@ img {
 	.timeline-panel {
 		width: 40%;
 	}
-
 }
