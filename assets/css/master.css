@@ -89,7 +89,6 @@ body {
 /* CONTENT */
 
 #content {
-
 	text-align: center;
 }
 
@@ -155,7 +154,7 @@ img {
 /* ELEMENTS */
 
 .section {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .card:not(:last-child), #skills .block:not(:last-child), #contact .block:not(:last-child) {
@@ -243,15 +242,16 @@ img {
 /* DESKTOP */
 
 @media screen and (min-width: 1024px){
+	#content {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 	.animate-spin {
 		transition: transform .8s ease-in-out;
 	}
 	.animate-spin:hover {
 		transform: rotate(360deg);
-	}
-
-	.card:not(:last-child), #contact .block:not(:last-child) {
-		margin-bottom: 0px;
 	}
 
 	.block {
