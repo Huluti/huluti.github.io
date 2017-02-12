@@ -261,6 +261,9 @@ img {
 	.card {
 		display: inline-block;
 		vertical-align: top;
+	}
+
+	.max-w {
 		max-width: 280px;
 	}
 
