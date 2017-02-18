@@ -267,12 +267,13 @@ img {
 		max-width: 280px;
 	}
 
-	.timeline-panel, .timeline-badge {
+	#timeline li {
 		display: inline-block;
 		vertical-align: middle;
 	}
 
-	.timeline-panel {
-		width: 40%;
+	.timeline-badge, .timeline-content {
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
