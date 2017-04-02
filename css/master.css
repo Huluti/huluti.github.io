@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE */
+
+body {
+	background-color: #f9f9f9;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#fullpage {
+	padding: 20px 20px 0 20px;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	font-family: 'Basic', sans-serif;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 40px;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+
+.section {
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+.square {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: #f9f9f9;
+}
+
+ul {
+	margin-left: 15px;
+}
+
+li {
+	list-style-type: square;
+	line-height: 30px;
+}
+
+ul ul li {
+	list-style-type: circle;
+}
+
+a {
+	color: #0099ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #007fd4;
+	text-decoration: underline;
+}
+
+i {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+#email {
+	word-break: break-all;
+}
+
+@media screen and (min-width: 950px) {
+	#fullpage {
+		width: 75%;
+		margin: 0 auto;
+		padding: 20px 0 0 0;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	.square {
+		margin-bottom: 0;
+	}
+}
