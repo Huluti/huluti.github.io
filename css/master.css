@@ -104,12 +104,12 @@ ul ul li {
 }
 
 a {
-	color: #0099ff;
+	color: #e74c3c;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #007fd4;
+	color: #c0392b;
 	text-decoration: underline;
 }
 
@@ -123,6 +123,16 @@ b {
 
 #email {
 	word-break: break-all;
+}
+
+::-moz-selection {
+	background-color: #e74c3c;
+	color: #f9f9f9;
+}
+
+::selection {
+	background-color: #e74c3c;
+	color: #f9f9f9;
 }
 
 @media screen and (min-width: 950px) {
