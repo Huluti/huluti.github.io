@@ -104,12 +104,12 @@ ul ul li {
 }
 
 a {
-	color: #e74c3c;
+	color: #1abc9c;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #c0392b;
+	color: #16a085;
 	text-decoration: underline;
 }
 
@@ -126,12 +126,12 @@ b {
 }
 
 ::-moz-selection {
-	background-color: #e74c3c;
+	background-color: #1abc9c;
 	color: #f9f9f9;
 }
 
 ::selection {
-	background-color: #e74c3c;
+	background-color: #1abc9c;
 	color: #f9f9f9;
 }
 
