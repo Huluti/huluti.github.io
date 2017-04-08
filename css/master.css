@@ -104,8 +104,12 @@ ul ul li {
 }
 
 a {
-	color: #1abc9c;
+	color: inherit;
 	text-decoration: none;
+}
+
+a span {
+	color: #1abc9c;
 }
 
 a:hover {
