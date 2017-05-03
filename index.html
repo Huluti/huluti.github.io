@@ -14,67 +14,147 @@
 </head>
 <body>
     <div id="fullpage"class="animated bounceInUp">
-        <h1>Hugo Posnic</h1>
-        <h2>Étudiant, développeur &amp; entrepreneur.</h2>
+        <header id="header">
+            <h1>Hugo Posnic</h1>
+            <h2>Étudiant, développeur &amp; entrepreneur.</h2>
+        </header>
 
-        <h3>Mes compétences</h3>
-        <div class="section">
-            <div class="square"><b>HTML5 / CSS3</b></div><!-- @whitespace
-            --><div class="square"><b>Javascript</b></div><!-- @whitespace
-            --><div class="square"><b>Python</b></div><!-- @whitespace
-            --><div class="square"><b>PHP</b></div><!-- @whitespace
-            --><div class="square"><b>MySQL / MariaDB</b></div>
-        </div>
-        <h3>Mes projets</h3>
-        <div class="section">
-            <ul>
-                <li><a href="https://github.com/Huluti/Coulr"><span>Coulr</span> : boite à couleurs pour les designers et développeurs.</a></li>
-                <li><a href="https://github.com/ImEditor/ImEditor"><span>ImEditor</span> : éditeur d'image simple &amp; polyvalent.</a></li>
-                <li><a href="https://tuxhomepage.xyz"><span>TuxHomepage</span> : page d'accueil aux couleurs des distributions Linux les plus populaires.</a></li>
-            </ul>
-        </div>
-        <h3>Mes contributions à des projets open-source</h3>
-        <div class="section">
-            <ul>
-                <li><b>Manjaro :</b> distribution Linux.</li>
-                <ul>
-                    <li><a href="https://github.com/manjaro/manjaro-hello"><span>Manjaro Hello</span> : réalisation de l'outil d'accueil officiel.</a></li>
-                    <li><a href="https://github.com/manjaro/pacman-mirrors"><span>Pacman-Mirrors</span> : aide apportée au développement de l'outil de gestion des miroirs.</a></li>
-                    <li><a href="http://repo.manjaro.org"><span>Manjaro Repository</span> : refonte du service de surveillance des miroirs.</a></li>
-                </ul>
-                <li><b>Debreate :</b> outil de création de paquets Debian.</li>
-                <ul>
-                    <li><a href="https://antumdeluge.github.io/debreate-web"><span>Debreate-web</span> : refonte du site web.</a></li>
-                </ul>
-            </ul>
-        </div>
-        <h3>Mon parcours</h3>
-        <div class="section">
-            <ul>
-                <li><b>2017</b></li>
-                <ul>
-                    <li>Statut étudiant-entrepreneur.</li>
-                    <li>Intégration de l'équipe de développement de Manjaro.</li>
-                    <li>Licence Informatique.</li>
-                </ul>
-                <li><b>2016</b></li>
-                <ul>
-                    <li>Baccalauréat Scientifique.</li>
-                </ul>
-            </ul>
-        </div>
-        <h3>Mes références</h3>
-        <div class="section">
-            <ul>
-                <li><a href="http://la-vache-libre.org/coulr-une-palette-de-couleurs-tres-sympathique-pour-les-developpeurs-et-les-designers"><span>Article</span> de «La Vache Libre» à propos de Coulr.</a></li>
-                <li><a href="http://start.handylinux.org"><span>Page d'accueil</span> de la distribution HandyLinux basée sur TuxHomepage.</a></li>
-                <li><a href="https://www.youtube.com/watch?v=bGB4sFiOa2I"><span>Vidéo</span> de présentation de TuxHomepage par Scott Viger.</a></li>
-            </ul>
-        </div>
-        <h3>Où me retrouver ?</h3>
-        <div class="section">
-            <div class="square"><a href="https://github.com/Huluti">GitHub</a></div><!-- @whitespace
-            --><div id="email" class="square"><a href="mailto:hugo.posnic@gmail.com">hugo.posnic@gmail.com</a></div>
+        <div id="content">
+            <div class="section">
+                <h3>Mes compétences</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title">#HTML5</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">#CSS3</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">#Javascript</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">#Python</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">#PHP</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">#MySQL</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Mes projets</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title"><a href="https://github.com/Huluti/Coulr">Coulr</a></div>
+                        <div class="box-content">
+                            <img src="img/coulr.png" alt="Coulr">
+                            <p>Boite à couleurs pour les designers et développeurs.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title"><a href="https://github.com/ImEditor/ImEditor">ImEditor</a></div>
+                        <div class="box-content">
+                            <img src="img/imeditor.png" alt="Coulr">
+                            <p>Éditeur d'image simple &amp; polyvalent.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title"><a href="https://tuxhomepage.xyz">TuxHomepage</a></div>
+                        <div class="box-content">
+                            <img src="img/tuxhomepage.png" alt="Coulr">
+                            <p>Page d'accueil aux couleurs des distributions Linux les plus populaires.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Mes contributions</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title">Manjaro</div>
+                        <div class="box-content">
+                            <ul>
+                                <li><a href="https://github.com/manjaro/manjaro-hello">Manjaro Hello</a> : réalisation de l'outil d'accueil officiel.</li>
+                                <li><a href="https://github.com/manjaro/pacman-mirrors">Pacman-Mirrors</a> : amélioration de l'outil de gestion des miroirs.</li>
+                                <li><a href="http://repo.manjaro.org">Manjaro Repository</a> : refonte du service de surveillance des miroirs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">Debreate</div>
+                        <div class="box-content">
+                            <ul>
+                                <li><a href="https://antumdeluge.github.io/debreate-web">Debreate-web</a> : refonte du site web.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Mon parcours</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title"><a href="https://github.com/Huluti">2017</a></div>
+                        <div class="box-content">
+                            <ul>
+                                <li>Statut étudiant-entrepreneur.</li>
+                                <li>Intégration de l'équipe de développement de Manjaro.</li>
+                                <li>Licence Informatique.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">2016</div>
+                        <div class="box-content">
+                            <ul>
+                                <li>Baccalauréat Scientifique.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Mes références</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title"><a href="http://la-vache-libre.org/coulr-une-palette-de-couleurs-tres-sympathique-pour-les-developpeurs-et-les-designers">#Article</a>
+                        </div>
+                        <div class="box-content">
+                            <p>Article de «La Vache Libre» à propos de Coulr.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title"><a href="http://start.handylinux.org">#Fork</a></div>
+                        <div class="box-content">
+                            <p>Page d'accueil de la distribution HandyLinux basée sur TuxHomepage.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title"><a href="https://www.youtube.com/watch?v=bGB4sFiOa2I">#Vidéo.</a></div>
+                        <div class="box-content">
+                            <p>Vidéo de présentation de TuxHomepage par Scott Viger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Me contacter</h3>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="box-title"><a href="https://github.com/Huluti">GitHub</a></div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title"><a href="mailto:hugo.posnic@gmail.com">hugo.posnic@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
