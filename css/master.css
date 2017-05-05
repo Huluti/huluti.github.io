@@ -104,10 +104,18 @@ body {
 	height: 70px;
 	border-radius: 70px;
 	font-size: 24px;
-	background-color: #008dd5;
+	background-color: #23b4ff;
 	color: #f9f9f9;
 	text-decoration: none;
 	box-shadow: 0px 0px 8px 0px #e2e2e2;
+}
+
+#header-arrow:hover {
+	background-color: #008dd5;
+}
+
+#header-arrow:focus {
+	background-color: #005a89;
 }
 
 #content {
@@ -181,8 +189,12 @@ h3 {
 }
 
 .project a:hover, .btn-contact a:hover {
-	color: #008dd5;
+	color: #23b4ff;
 	text-decoration: none;
+}
+
+.project a:focus, .btn-contact a:focus{
+	color: #008dd5;
 }
 
 #footer {
