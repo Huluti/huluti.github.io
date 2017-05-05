@@ -161,7 +161,7 @@ h3 {
 .skill i {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 96px;
+	font-size: 64px;
 }
 
 .skill h4, .project a {
@@ -173,7 +173,7 @@ h3 {
 .project img {
 	display: block;
 	margin: 0 auto 20px auto;
-	max-width: 96px;
+	max-width: 64px;
 }
 
 .project p {
@@ -189,7 +189,7 @@ h3 {
 .btn-contact i {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 64px;
+	font-size: 48px;
 }
 
 .btn-contact a {
@@ -232,6 +232,15 @@ h3 {
 	}
 	#header h2 {
 		font-size: 2em;
+	}
+	.project img {
+		max-width: 96px;
+	}
+	.skill i {
+		font-size: 96px;
+	}
+	.btn-contact i {
+		font-size: 64px;
 	}
 }
 
