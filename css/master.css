@@ -180,6 +180,11 @@ h3 {
 	color: inherit;
 }
 
+.project a:hover, .btn-contact a:hover {
+	color: #008dd5;
+	text-decoration: none;
+}
+
 #footer {
 	background: #333333;
 	color: #f9f9f9;
