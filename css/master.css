@@ -190,6 +190,15 @@ h3 {
 }
 
 @media screen and (min-width: 960px) {
+	#header h1 {
+		font-size: 6em;
+	}
+	#header h2 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
 	#header {
 		height: 85vh;
 		padding: 0 20px;
