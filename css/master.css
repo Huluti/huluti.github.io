@@ -206,6 +206,16 @@ h3 {
 	font-size: 1.2em;
 }
 
+::-moz-selection {
+	color: #f9f9f9;
+	background: #23b4ff;
+}
+
+::selection {
+	color: #f9f9f9;
+	background: #23b4ff;
+}
+
 @media screen and (min-width: 960px) {
 	#header h1 {
 		font-size: 6em;
