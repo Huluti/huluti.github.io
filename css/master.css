@@ -84,8 +84,15 @@ body {
 }
 
 #header h2 {
+	margin-bottom: 40px;
 	font-size: 1.5em;
 	text-transform: uppercase;
+	text-shadow: 0px 0px 8px #e2e2e2;
+	color: #0b3954;
+}
+
+#header span {
+	font-size: 1.5em;
 	text-shadow: 0px 0px 8px #e2e2e2;
 	color: #0b3954;
 }
@@ -235,6 +242,9 @@ h3 {
 	}
 	#header h2 {
 		font-size: 3em;
+	}
+	#header span {
+		font-size: 1.8em;
 	}
 	h3 {
 		margin-bottom: 80px;
