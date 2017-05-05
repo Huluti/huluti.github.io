@@ -118,7 +118,7 @@ body {
 	animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
-@keyframes pulse {to {box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 30px rgb(226, 226, 226, 0.2);}}
 
 #header-arrow:hover {
 	background-color: #008dd5;
