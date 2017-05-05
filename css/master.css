@@ -49,106 +49,162 @@ table {
 
 /* STYLE */
 
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
 	background-color: #f9f9f9;
 	color: #333333;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 #header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 	padding: 80px 20px;
-	background-color: #3498db;
+	background: linear-gradient(130deg, #fe5f55, #715aff);
 	color: #f9f9f9;
 	text-align: center;
+}
+
+#header h1 {
+	margin-bottom: 60px;
+	font-size: 4em;
+	font-family: 'Bungee Shade', cursive;
+	text-shadow: 0px 0px 8px #e2e2e2;
+	color: #0b3954;
+}
+
+#header h2 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px #e2e2e2;
+	color: #0b3954;
+}
+
+#header-arrow {
+	display: block;
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	font-size: 24px;
+	background-color: #008dd5;
+	color: #f9f9f9;
+	text-decoration: none;
+	box-shadow: 0px 0px 8px 0px #e2e2e2;
 }
 
 #content {
 	text-align: center;
 }
 
-h1 {
-	font-size: 6em;
-	margin-bottom: 20px;
-	font-family: 'Basic', sans-serif;
-	font-weight: bold;
+.section, #footer {
+	padding: 80px 15%;
 }
 
-h2 {
-	font-size: 2.5em;
+.section:nth-child(even) {
+	background-color: #e2e2e2;
 }
 
 h3 {
-	font-size: 2em;
 	margin-bottom: 40px;
+	font-size: 2em;
 	text-transform: uppercase;
 }
 
-.section {
-	margin-bottom: 15px;
-	padding: 20px;
-}
-
-.box {
+.skill, .project {
 	display: inline-block;
-	vertical-align: top;
-	margin: 10px 20px;
 }
 
-.box-title {
-	padding: 15px 20px;
-	background-color: #e3e3e3;
-	font-weight: bold;
+.skill {
+	margin: 20px 30px;
 }
 
-.box-content {
-	text-align: left;
-	padding: 20px;
-	background-color: #ffffff;
+.project {
+	margin: 20px;
 }
 
-.box-content a {
-	color: #3498db;
-}
-
-.box-content img {
-	height: 64px;
-	width: 64px;
-	border-radius: 64px;
-	margin-right: 15px;
-}
-
-.box-content img, .box-content p {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-ul li:not(:last-child) {
-	padding-bottom: 20px;
+.skill i {
+	display: block;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #e3e3e3;
+	font-size: 96px;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-a:hover, a:hover > span {
-	color: #2980b9;
-}
-
-i {
-	font-style: italic;
-}
-
-b {
+.skill h4, .project a {
 	font-weight: bold;
+	font-size: 1.2em;
+	color: inherit;
 }
 
-@media screen and (min-width: 1000px) {
-	#content {
-		width: 75%;
-		margin: 0 auto;
-		padding: 20px 0 0 0;
+.project img {
+	display: block;
+	margin: 0 auto 20px auto;
+	max-width: 96px;
+}
+
+.project p {
+	margin-top: 15px;
+	font-size: 1.2em;
+}
+
+.btn-contact {
+	display: inline-block;
+	margin: 20px 40px;
+}
+
+.btn-contact i {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 64px;
+}
+
+.btn-contact a {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: inherit;
+}
+
+#footer {
+	background: #333333;
+	color: #f9f9f9;
+}
+
+#footer p {
+	font-size: 1.2em;
+}
+
+@media screen and (min-width: 960px) {
+	#header {
+		height: 85vh;
+		padding: 0 20px;
+	}
+	#header h1 {
+		font-size: 8em;
+	}
+	#header h2 {
+		font-size: 3em;
+	}
+	h3 {
+		margin-bottom: 80px;
+		font-size: 3em;
+	}
+	.skill h4, .project a, .btn-contact a, #footer p {
+		font-size: 1.5em;
 	}
 }
