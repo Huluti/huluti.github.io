@@ -146,16 +146,9 @@ h3 {
 	text-transform: uppercase;
 }
 
-.skill, .project {
-	display: inline-block;
-}
-
 .skill {
+	display: inline-block;
 	margin: 20px 30px;
-}
-
-.project {
-	margin: 20px;
 }
 
 .skill i {
@@ -164,10 +157,9 @@ h3 {
 	font-size: 64px;
 }
 
-.skill h4, .project a {
-	font-weight: bold;
-	font-size: 1.2em;
-	color: inherit;
+.project {
+	display: inline-block;
+	margin: 20px;
 }
 
 .project img {
@@ -179,6 +171,12 @@ h3 {
 .project p {
 	margin-top: 15px;
 	font-size: 1.2em;
+}
+
+.skill h4, .project a {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: inherit;
 }
 
 .btn-contact {
