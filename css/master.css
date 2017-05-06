@@ -132,8 +132,8 @@ body {
 	text-align: center;
 }
 
-.section, #footer {
-	padding: 80px 15%;
+.section {
+	padding: 80px 20px;
 }
 
 .section:nth-child(even) {
@@ -208,6 +208,7 @@ h3 {
 }
 
 #footer {
+	padding: 80px 20px;
 	background: #333333;
 	color: #f9f9f9;
 }
@@ -232,6 +233,9 @@ h3 {
 	}
 	#header h2 {
 		font-size: 2em;
+	}
+	.section {
+		padding: 80px 15%;
 	}
 	.project img {
 		max-width: 96px;
