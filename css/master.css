@@ -70,7 +70,7 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 80px 20px;
-	background: linear-gradient(130deg, #fe5f55, #715aff);
+	background: linear-gradient(135deg, #3498db, #9b59b6);
 	color: #f9f9f9;
 	text-align: center;
 }
@@ -114,7 +114,7 @@ body {
 	height: 70px;
 	border-radius: 70px;
 	font-size: 24px;
-	background-color: #23b4ff;
+	background-color: #e74c3c;
 	color: #f9f9f9;
 	text-decoration: none;
 	box-shadow: 0px 0px 8px 0px #e2e2e2;
@@ -125,11 +125,7 @@ body {
 @keyframes pulse {to {box-shadow: 0 0 0 30px rgb(226, 226, 226, 0.2);}}
 
 #header-arrow:hover {
-	background-color: #008dd5;
-}
-
-#header-arrow:focus {
-	background-color: #005a89;
+	background-color: #c0392b;
 }
 
 #content {
@@ -201,12 +197,8 @@ h3 {
 }
 
 .project a:hover, .btn-contact a:hover {
-	color: #23b4ff;
+	color: #e74c3c;
 	text-decoration: none;
-}
-
-.project a:focus, .btn-contact a:focus{
-	color: #008dd5;
 }
 
 #footer {
@@ -239,7 +231,7 @@ h3 {
 		position: absolute;
 		top: 0;
 		width: 100%;
-		background-color: rgba(34, 180, 255, 0.1);
+		background-color: rgba(0, 0, 0, 0.1);
 	}
 	#navbar li {
 		display: inline-block;
@@ -256,11 +248,7 @@ h3 {
 		transition: background-color 0.5s ease;
 	}
 	#navbar li a:hover {
-		background-color: rgba(0, 141, 213, 0.1);
-	}
-	#navbar li a:focus {
-
-		background-color: rgba(0, 90, 136, 0.1);
+		background-color: rgba(0, 0, 0, 0.2);
 	}
 	#header h1 {
 		font-size: 5em;
