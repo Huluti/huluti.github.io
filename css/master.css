@@ -289,6 +289,10 @@ b {
 	font-weight: bold;
 }
 
+a {
+	color: #f1513c;
+}
+
 a:hover {
 	text-decoration: none;
 }
