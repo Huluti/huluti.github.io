@@ -190,7 +190,7 @@ body {
 }
 
 .project {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding: 30px;
 	border-radius: 4px;
 	text-decoration: none;
@@ -322,13 +322,16 @@ a:hover {
 	#header h1 {
 		font-size: 72px;
 	}
+
 	#header h2 {
 		font-size: 32px;
 	}
+
 	#navbar ul {
 		width: 90%;
 		margin: 0 auto;
 	}
+
 	.section {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -339,6 +342,7 @@ a:hover {
 	#navbar ul {
 		width: 70%;
 	}
+
 	.section {
 		padding-left: 15%;
 		padding-right: 15%;
