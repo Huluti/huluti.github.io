@@ -219,7 +219,6 @@ body {
 }
 
 .skill {
-	display: inline-block;
 	margin: 0 10px 20px 10px;
 	padding: 20px;
 	border-radius: 4px;
@@ -234,8 +233,14 @@ body {
 	font-size: 80px;
 }
 
+#contacts {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .btn-contact {
-	display: inline-block;
 	margin: 0 40px 20px 40px;
 }
 
@@ -261,7 +266,7 @@ a:hover {
 }
 
 @media screen and (min-width: 450px) {
-	#projects, #skills {
+	#projects, #skills, #contacts {
 		flex-direction: row;
 	}
 
