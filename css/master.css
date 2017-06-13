@@ -49,9 +49,14 @@ table {
 
 /* STYLE */
 
+html, body {
+	height: 100%;
+}
+
 html {
 	box-sizing: border-box;
 }
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -60,6 +65,12 @@ body {
 	background-color: #F9F9F9;
 	color: #454545;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+#fullpage {
+	min-height: 100%;
+	margin-bottom: -70px;
 }
 
 #navbar {
@@ -89,7 +100,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: inherit;
-	font-weight: bold;
+
 }
 
 #navbar li a:hover {
@@ -99,10 +110,14 @@ body {
 
 #header {
 	position: relative;
-	padding: 130px 20px 150px 20px;
+	padding: 130px 20px 100px 20px;
 	background: url('../img/background.jpeg') bottom;
 	color: #F9F9F9;
 	text-align: center;
+}
+
+#header.header-higher {
+	padding-bottom: 150px;
 }
 
 #header .avatar {
@@ -118,24 +133,20 @@ body {
 
 #header h1 {
 	margin-bottom: 30px;
-	font-size: 4em;
+	font-size: 64px;
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 }
 
 #header h2 {
 	margin-bottom: 30px;
-	font-size: 1.5em;
+	font-size: 24px;
 	text-transform: uppercase;
 }
 
 #header span {
 	margin-bottom: 80px;
-	font-size: 1.5em;
-}
-
-#content {
-	text-align: center;
+	font-size: 24px;
 }
 
 .section {
@@ -153,8 +164,9 @@ body {
 
 .section h3 {
 	margin-bottom: 40px;
-	font-size: 2em;
+	font-size: 32px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .section h3::after {
@@ -183,7 +195,6 @@ body {
 	border-radius: 4px;
 	text-decoration: none;
 	color: #F9F9F9;
-	font-size: 1.2em;
 	text-align: center;
 }
 
@@ -261,12 +272,30 @@ body {
 }
 
 #footer {
-	padding: 20px;
-	background: #F9F9F9;
+	height: 70px;
+	background-color: #F9F9F9;
+	text-align: center;
+	font-size: 16px;
+}
+
+.push {
+	height: 70px;
+}
+
+p {
+	line-height: 30px;
+}
+
+b {
+	font-weight: bold;
 }
 
 a:hover {
 	text-decoration: none;
+}
+
+.align-center {
+	text-align: center;
 }
 
 @media screen and (min-width: 450px) {
@@ -291,10 +320,10 @@ a:hover {
 
 @media screen and (min-width: 960px) {
 	#header h1 {
-		font-size: 5em;
+		font-size: 72px;
 	}
 	#header h2 {
-		font-size: 2em;
+		font-size: 32px;
 	}
 	#navbar ul {
 		width: 90%;
