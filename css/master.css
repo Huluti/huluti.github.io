@@ -238,14 +238,13 @@ body {
 	padding: 20px;
 	border-radius: 4px;
 	background-color: #F9F9F9;
-	font-size: 22px;
 	color: initial;
+	text-align: left;
 }
 
-.skill i {
-	display: block;
-	margin-bottom: 20px;
-	font-size: 80px;
+.skill-title {
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 #contacts {
