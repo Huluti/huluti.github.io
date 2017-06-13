@@ -71,7 +71,11 @@ body {
 	height: 50px;
 	line-height: 50px;
 	background-color: rgba(69, 69, 69, 0.95);
-	text-align: center;
+}
+
+#navbar ul {
+	margin: 0 auto;
+	text-align: left;
 }
 
 #navbar li {
@@ -170,7 +174,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .project {
@@ -219,7 +223,7 @@ body {
 }
 
 .skill {
-	margin: 0 10px 20px 10px;
+	margin-bottom: 20px;
 	padding: 20px;
 	border-radius: 4px;
 	background-color: #F9F9F9;
@@ -272,6 +276,9 @@ a:hover {
 
 	.project {
 		width: calc(50% - 40px);
+	}
+
+	.skill {
 		margin: 0 10px 20px 10px;
 	}
 }
@@ -289,6 +296,10 @@ a:hover {
 	#header h2 {
 		font-size: 2em;
 	}
+	#navbar ul {
+		width: 90%;
+		margin: 0 auto;
+	}
 	.section {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -296,6 +307,9 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
+	#navbar ul {
+		width: 70%;
+	}
 	.section {
 		padding-left: 15%;
 		padding-right: 15%;
