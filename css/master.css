@@ -184,15 +184,15 @@ body {
 }
 
 .project:nth-of-type(1) {
-	background-color: #232732;
+	background-color: #1E222D;
 }
 
 .project:nth-of-type(2) {
-	background-color: #F65641;
+	background-color: #F1513C;
 }
 
 .project:nth-of-type(3) {
-	background-color: #876AD8;
+	background-color: #7F6BD6;
 }
 
 .project:nth-of-type(4) {
