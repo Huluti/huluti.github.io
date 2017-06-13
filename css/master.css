@@ -348,7 +348,7 @@ a:hover {
 		padding: 0 30px;
 	}
 
-	#navbar li a:hover {
+	#navbar li a:hover, #navbar li a.selected {
 		background-color: rgba(249, 249, 249, 0.95);
 		color: initial;
 	}
