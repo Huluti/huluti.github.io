@@ -190,12 +190,15 @@ body {
 }
 
 .project {
-	margin-bottom: 40px;
 	padding: 30px;
 	border-radius: 4px;
 	text-decoration: none;
 	color: #F9F9F9;
 	text-align: center;
+}
+
+.project:not(:last-child) {
+	margin-bottom: 40px;
 }
 
 .project:nth-of-type(1) {
@@ -234,12 +237,15 @@ body {
 }
 
 .skill {
-	margin-bottom: 20px;
 	padding: 20px;
 	border-radius: 4px;
 	background-color: #F9F9F9;
 	color: initial;
 	text-align: left;
+}
+
+.skill:not(:last-child) {
+	margin-bottom: 20px;
 }
 
 .skill-title {
@@ -255,7 +261,11 @@ body {
 }
 
 .btn-contact {
-	margin: 0 40px 20px 40px;
+	margin: 0 40px 0 40px;
+}
+
+.btn-contact:not(:last-child) {
+	margin-bottom: 20px;
 }
 
 .btn-contact i {
