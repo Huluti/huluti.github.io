@@ -68,44 +68,40 @@ body {
 	font-size: 18px;
 }
 
+.logo {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+}
+
 #fullpage {
 	min-height: 100%;
 	margin-bottom: -70px;
 }
 
 #navbar {
-	position: fixed;
-	z-index: 9999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 50px;
-	line-height: 50px;
 	background-color: rgba(69, 69, 69, 0.95);
 }
 
-#navbar ul {
-	margin: 0 auto;
-	text-align: left;
+#navbar ul:first-child {
+	display: none;
+}
+
+#navbar-content .logo {
+	text-decoration: none;
+	color: inherit;
 }
 
 #navbar li {
 	display: inline-block;
 	height: 50px;
+	margin: 0 20px;
 }
 
 #navbar li a {
 	display: block;
-	padding: 0 30px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: inherit;
-
-}
-
-#navbar li a:hover {
-	background-color: rgba(249, 249, 249, 0.95);
-	color: initial;
 }
 
 #header {
@@ -134,8 +130,6 @@ body {
 #header h1 {
 	margin-bottom: 30px;
 	font-size: 64px;
-	font-family: 'Dosis', sans-serif;
-	text-transform: uppercase;
 }
 
 #header h2 {
@@ -326,6 +320,39 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
+	#navbar {
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	#navbar-content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	#navbar ul:first-child {
+		display: block;
+	}
+
+	#navbar li {
+		margin: 0;
+	}
+
+	#navbar li a {
+		padding: 0 30px;
+	}
+
+	#navbar li a:hover {
+		background-color: rgba(249, 249, 249, 0.95);
+		color: initial;
+	}
+
 	.project {
 		width: calc(33.33% - 40px);
 	}
@@ -340,7 +367,7 @@ a:hover {
 		font-size: 32px;
 	}
 
-	#navbar ul {
+	#navbar-content {
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -352,7 +379,7 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-	#navbar ul {
+	#navbar-content {
 		width: 70%;
 	}
 
