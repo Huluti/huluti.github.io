@@ -10,7 +10,7 @@
     <meta name="google-site-verification" content="_BQButKyprPUoOWBCAR-OVAjqYt1hWAE_mBgG64TpVc">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="css/master.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 </head>
@@ -19,81 +19,73 @@
         <header id="header">
             <navbar id="navbar">
                 <ul>
-                    <li><a href="#skills">Compétences</a></li><!--
-                    --><li><a href="#projects">Projets</a></li><!--
-                    --><li><a href="#contact">Contact</a></li>
+                    <li><a href="">Accueil</a></li>
                 </ul>
             </navbar>
             <h1>Hugo Posnic</h1>
             <h2>Entrepreneur, développeur &amp; étudiant.</h2>
             <span><i class="fa fa-map-marker" aria-hidden="true"></i> Orléans, France</span>
-            <a href="#skills" id="header-arrow"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            <img class="avatar" src="img/hugo-posnic.jpg" alt="">
         </header>
 
         <div id="content">
-            <div id="skills" class="section">
-                <h3>Mes compétences</h3>
-                <div class="skill">
-                    <i class="devicon-html5-plain colored"></i>
-                    <h4>HTML5</h4>
-                </div><!--
-                --><div class="skill">
-                    <i class="devicon-css3-plain colored"></i>
-                    <h4>CSS3</h4>
-                </div><!--
-                --><div class="skill">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <h4>Javascript</h4>
-                </div><!--
-                --><div class="skill">
-                    <i class="devicon-php-plain colored"></i>
-                    <h4>PHP</h4>
-                </div><!--
-                --><div class="skill">
-                    <i class="devicon-mysql-plain colored"></i>
-                    <h4>MySQL</h4>
-                </div><!--
-                --><div class="skill">
-                    <i class="devicon-python-plain colored"></i>
-                    <h4>Python</h4>
-                </div>
-            </div>
-
-            <div id="projects" class="section">
+            <div class="section">
                 <h3>Mes projets</h3>
-                <div class="project">
-                    <img src="img/sence.png" alt="Sence">
-                    <a href="https://www.facebook.com/SenceWeb">Sence</a>
-                    <p>Agence web sur Orléans.</p>
-                </div><!--
-                --><div class="project">
-                    <img src="img/imeditor.png" alt="ImEditor">
-                    <a href="https://imeditor.github.io">ImEditor</a>
-                    <p>Éditeur d'image simple et polyvalent.</p>
-                </div><!--
-                --><div class="project">
-                    <img src="img/coulr.png" alt="Coulr">
-                    <a href="https://github.com/Huluti/Coulr">Coulr</a>
-                    <p>Boite à couleurs pour les designers.</p>
-                </div><!--
-                --><div class="project">
-                    <img src="img/manjaro-hello.png" alt="Manjaro">
-                    <a href="https://github.com/manjaro/manjaro-hello">Manjaro Hello</a>
-                    <p>Outil d'accueil de la distribution Manjaro.</p>
-                </div><!--
-                --><div class="project">
-                    <img src="img/debreate.png" alt="Debreate">
-                    <a href="https://antumdeluge.github.io/debreate-web">Debreate Web</a>
-                    <p>Site web du logiciel Debreate.</p>
-                </div><!--
-                --><div class="project">
-                    <img src="img/tuxhomepage.png" alt="TuxHomepage">
-                    <a href="https://tuxhomepage.xyz">TuxHomepage</a>
-                    <p>Page d'accueil aux couleurs de Linux.</p>
+                <div id="projects">
+                    <a class="project" href="https://senceweb.fr" rel="nofollow">
+                        <p class="job">Co-fondateur de Sence</p>
+                        <img src="img/sence.png" alt="Sence">
+                        <p class="description">Agence web sur Orléans.</p>
+                    </a>
+                    <a class="project" href="https://imeditor.github.io">
+                        <p class="job">Co-créateur de ImEditor</p>
+                        <img src="img/imeditor.png" alt="ImEditor">
+                        <p class="description">Éditeur d'image simple et polyvalent.</p>
+                    </a>
+                    <a class="project" href="https://github.com/Huluti/Coulr">
+                        <p class="job">Créateur de Coulr</p>
+                        <img src="img/coulr.png" alt="Coulr">
+                        <p class="description">Boite à couleurs pour les designers.</p>
+                    </a>
+                    <a class="project" href="https://manjaro.org">
+                        <p class="job">Développeur Manjaro</p>
+                        <img src="img/manjaro-hello.png" alt="Manjaro">
+                        <p class="description">Distribution Linux Manjaro.</p>
+                    </a>
                 </div>
             </div>
 
-            <div id="contact" class="section">
+            <div class="section">
+                <h3>Mes compétences</h3>
+                <div id="skills">
+                    <div class="skill">
+                        <i class="devicon-html5-plain colored"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-css3-plain colored"></i>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h4>Javascript</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-php-plain colored"></i>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <h4>MySQL</h4>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-python-plain colored"></i>
+                        <h4>Python</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
                 <h3>Me contacter</h3>
                 <div class="btn-contact">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -114,7 +106,7 @@
             </div>
 
             <footer id="footer">
-                <p>Fais avec <i class="fa fa-heart" aria-hidden="true"></i> et beaucoup de <i class="fa fa-coffee" aria-hidden="true"></i>.</p>
+                <p>© Hugo Posnic 2017, Tous droits réservés.</p>
             </footer>
         </div>
     </div>
