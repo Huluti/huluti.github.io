@@ -8,5 +8,10 @@
         "title": "Hugo Posnic - À propos",
         "h1": "À propos",
         "h2": "Hugo Posnic"
+    },
+    "blog": {
+        "title": "Hugo Posnic - Blog",
+        "h1": "Blog",
+        "h2": "Partage, veille et analyses"
     }
 }

@@ -1,0 +1,12 @@
+<div class="section">
+    <h3>Articles</h3>
+    <div id="articles" class="grid">
+        <% for(article in public.articles._data) { %>
+            <div class="list-article">
+                <a href="/articles/<%- article %>.html"><%- public.articles._data[article].title %></a>
+                <p class="list-article-resume"><%- public.articles._data[article].resume %></p>
+                <span class="list-article-date">Publié le <%- public.articles._data[article].date %></span>
+            </div>
+        <% } %>
+    </div>
+</div>
