@@ -236,10 +236,6 @@ body {
 	text-align: left;
 }
 
-.skill:not(:last-child) {
-	margin-bottom: 40px;
-}
-
 .skill-title {
 	font-size: 14px;
 	text-transform: uppercase;
@@ -247,10 +243,6 @@ body {
 
 .btn-contact {
 	margin: 0 40px 0 40px;
-}
-
-.btn-contact:not(:last-child) {
-	margin-bottom: 40px;
 }
 
 .btn-contact i {
@@ -282,10 +274,6 @@ body {
 	background-color: #FFFFFF;
 	color: initial;
 	text-align: left;
-}
-
-.list-article:not(:last-child) {
-	margin-bottom: 20px;
 }
 
 .list-article a {
