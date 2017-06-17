@@ -243,7 +243,7 @@ body {
 }
 
 .btn-contact {
-	margin: 0 40px 0 40px;
+	margin-bottom: 40px;
 }
 
 .btn-contact i {
@@ -343,6 +343,10 @@ a:hover {
 
 	.skill {
 		margin: 0 10px 40px 10px;
+	}
+
+	.btn-contact {
+		margin: 0 40px 40px 40px;
 	}
 
 	.list-article {
