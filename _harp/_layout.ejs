@@ -38,16 +38,15 @@
                 <img class="avatar" src="/img/hugo-posnic.jpg" alt="Hugo Posnic">
             <% } %>
         </header>
-
         <div id="content">
             <%- yield %>
             <% if (current.path[0] == "articles") { %>
                 <%- partial("_comments") %>
             <% } %>
         </div>
+        <footer id="footer">
+            <p>© Hugo Posnic 2017, Tous droits réservés.</p>
+        </footer>
     </div>
-    <footer id="footer">
-        <p>© Hugo Posnic 2017, Tous droits réservés.</p>
-    </footer>
 </body>
 </html>

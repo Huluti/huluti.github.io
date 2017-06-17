@@ -68,6 +68,16 @@ body {
 	font-size: 18px;
 }
 
+#fullpage {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+#content {
+	flex: 1;
+}
+
 .logo {
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
