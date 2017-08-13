@@ -389,8 +389,7 @@ a:hover {
 	}
 
 	#navbar li a:hover, #navbar li a.selected {
-		background-color: #F9F9F9;
-		color: initial;
+		color: #000000;
 	}
 
 	#header {
