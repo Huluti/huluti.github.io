@@ -267,49 +267,6 @@ body {
 	font-size: 16px;
 }
 
-#articles {
-	justify-content: flex-start;
-}
-
-.list-article {
-	padding: 40px 60px;
-	border-radius: 4px;
-	background-color: #FFFFFF;
-	color: initial;
-	text-align: left;
-}
-
-.list-article a {
-	display: block;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-.list-article-resume {
-	margin-bottom: 20px;
-	line-height: initial;
-}
-
-.list-article-date {
-	display: block;
-	text-align: right;
-	font-size: 14px;
-	color: #909090;
-}
-
-.article p:not(:last-child) {
-	margin-bottom: 40px;
-}
-
-.article h3 {
-	text-align: left;
-}
-
-.article h3::after {
-	display: none;
-}
-
 p {
 	line-height: 30px;
 }
@@ -330,10 +287,6 @@ a:hover {
 	text-align: center;
 }
 
-#disqus_thread {
-	margin-bottom: 40px;
-}
-
 @media screen and (min-width: 450px) {
 	.grid {
 		flex-direction: row;
@@ -349,11 +302,6 @@ a:hover {
 
 	.btn-contact {
 		margin: 0 40px 40px 40px;
-	}
-
-	.list-article {
-		width: calc(33.33% - 40px);
-		margin: 0 20px 40px 20px;
 	}
 }
 
