@@ -196,9 +196,16 @@ body {
 	font-size: 24px;
 }
 
+#contact p {
+	line-height: 36px;
+}
+
 #contact-button {
+	margin-left: 40px;
+	width: 220px;
 	padding: 15px 20px;
 	text-decoration: none;
+	text-align: center;
 	background: #03a9f4;
 	color: #ffffff;
 }
@@ -295,6 +302,7 @@ b {
 	}
 
 	#contact-button {
+		margin-left: 0;
 		margin-top: 40px;
 	}
 
