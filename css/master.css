@@ -243,6 +243,8 @@ b {
 	font-weight: bold;
 }
 
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 1200px) {
 	#header, #content-header, #work, #contact, #footer {
 		padding-left: 10%;
