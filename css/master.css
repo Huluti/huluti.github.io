@@ -114,17 +114,15 @@ body {
 	display: block;
 	margin-bottom: 40px;
 	font-size: 24px;
-	color: #03a9f4;
-	text-decoration: none;
-}
-
-#content-header a:hover {
-	color: #2196f3;
 }
 
 #work {
 	padding: 80px 20%;
 	background-color: #f4f4f4;
+}
+
+#work .grid {
+	margin-bottom: 40px;
 }
 
 #work .project {
@@ -185,6 +183,11 @@ body {
 	height: 128px;
 }
 
+#work h4 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
 #contact {
 	display: flex;
 	justify-content: space-between;
@@ -216,6 +219,24 @@ body {
 	margin-left: 10px;
 	text-decoration: none;
 	color: initial;
+}
+
+ul {
+	margin-left: 40px;
+	list-style-type: square;
+}
+
+ul li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+a {
+	color: #03a9f4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2196f3;
 }
 
 b {
