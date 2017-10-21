@@ -136,6 +136,10 @@ body {
 	transition: filter 0.5s;
 }
 
+#work .project.featured {
+	width: 100%;
+}
+
 #work .project:hover {
 	filter: brightness(70%);
 }
@@ -145,16 +149,12 @@ body {
 }
 
 #work .project:nth-child(2) {
-	background-color: #9e8cdd;
+	background-color: #ecf0f1;
+	color: initial;
 }
 
 #work .project:nth-child(3) {
 	background-color: #f1513c;
-}
-
-#work .project:nth-child(4) {
-	background-color: #ecf0f1;
-	color: initial;
 }
 
 #work .project #details {
@@ -230,7 +230,12 @@ body {
 
 ul {
 	margin-left: 40px;
-	list-style-type: square;
+	list-style-type: disc;
+}
+
+ul ul {
+	margin-bottom: 20px;
+	list-style-type: circle;
 }
 
 ul li:not(:last-child) {
