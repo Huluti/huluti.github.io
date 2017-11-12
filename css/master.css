@@ -78,7 +78,7 @@ body {
 
 #header h1 {
 	font-size: 36px;
-	color: #03a9f4;
+	color: #454545;
 }
 
 #header ul li {
@@ -93,7 +93,7 @@ body {
 }
 
 #header ul li a:hover {
-	color: #03a9f4;
+	color: #454545;
 }
 
 #content h3 {
@@ -206,7 +206,7 @@ body {
 	padding: 15px 20px;
 	text-decoration: none;
 	text-align: center;
-	background: #03a9f4;
+	background: #454545;
 	color: #ffffff;
 }
 
@@ -248,7 +248,7 @@ ul li:not(:last-child) {
 }
 
 a {
-	color: #03a9f4;
+	color: #454545;
 	text-decoration: none;
 }
 
