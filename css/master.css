@@ -234,8 +234,13 @@ ul {
 }
 
 ul ul {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	list-style-type: circle;
+}
+
+ul li small {
+	margin-top: 10px;
+	font-size: 14px;
 }
 
 ul li:not(:last-child) {
