@@ -224,13 +224,9 @@ body {
 	font-size: 16px;
 }
 
-#footer i {
-	font-size: 26px;
-	margin-left: 20px;
-}
-
 #footer a {
-	margin-left: 10px;
+	margin-left: 20px;
+	font-size: 22px;
 	text-decoration: none;
 	color: initial;
 }
