@@ -130,7 +130,6 @@ body {
 	vertical-align: top;
 	width: 50%;
 	height: 400px;
-	padding: 20px;
 	font-size: 20px;
 	color: #ffffff;
 	background-repeat: no-repeat;
@@ -152,6 +151,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	padding: 20px;
 	height: 100%;
 	width: 100%;
 	color: #ffffff;
