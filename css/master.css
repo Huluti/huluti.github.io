@@ -93,7 +93,7 @@ body {
 }
 
 #header ul li a:hover {
-	color: #00bcd4;
+	text-decoration: underline;
 }
 
 #content h3 {
@@ -114,7 +114,6 @@ body {
 	display: block;
 	margin-bottom: 40px;
 	font-size: 24px;
-	text-decoration: none;
 }
 
 #work {
@@ -127,61 +126,40 @@ body {
 }
 
 #work .project {
-	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 50%;
 	height: 400px;
+	padding: 20px;
 	font-size: 20px;
 	color: #ffffff;
-	transition: filter 0.5s;
-}
-
-#work .project.featured {
-	width: 100%;
-}
-
-#work .project:hover {
-	filter: brightness(70%);
+	background-repeat: no-repeat;
+	background-size: 128px;
+	background-position: center;
 }
 
 #work .project:nth-child(1) {
-	background-color: #1e222d;
+	background-image: url('../img/sence.png');
+	background-color: #202020;
 }
 
 #work .project:nth-child(2) {
-	background-color: #ecf0f1;
-	color: initial;
-}
-
-#work .project:nth-child(3) {
+	background-image: url('../img/imeditor.png');
 	background-color: #f1513c;
 }
 
-#work .project #details {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	opacity: 0;
-	text-align: right;
-	transition: opacity 0.2s;
+#work .project a {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
+	color: #ffffff;
+	text-decoration: none;
 }
 
-#work .project:hover #details {
-	opacity: 100;
-}
-
-#work .project #details h4 {
-	display: block;
+#work .project h4 {
 	font-size: 24px;
-}
-
-#work .project img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 128px;
 }
 
 #work h4 {
@@ -252,10 +230,6 @@ ul li:not(:last-child) {
 a {
 	color: #454545;
 	text-decoration: underline;
-}
-
-a:hover {
-	color: #00bcd4;
 }
 
 b {
