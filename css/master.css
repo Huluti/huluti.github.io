@@ -243,6 +243,8 @@ input[type="email"] {
 	border-bottom: 1px solid #454545;
 	background-color: #ffffff;
 	font-size: inherit;
+	outline: none;
+	color: inherit;
 }
 
 .btn {
