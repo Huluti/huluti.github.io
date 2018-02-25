@@ -90,8 +90,13 @@ body {
 
 #header ul li {
 	display: inline-block;
+	margin-bottom: 0;
 	font-size: 24px;
 	margin-left: 30px;
+}
+
+#header ul li:first-child {
+	margin-left: 0;
 }
 
 #header ul li a {
@@ -322,6 +327,10 @@ input[type="email"] {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
+
+	#header ul li {
+		font-size: 20px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -330,15 +339,21 @@ input[type="email"] {
 	}
 
 	#header {
-		padding-bottom: 40px;
+		flex-direction: column;
+		padding-bottom: 0;
+		text-align: center;
 	}
 
 	#header h1 {
-		font-size: 24px;
+		margin-bottom: 40px;
 	}
 
 	#header ul {
-		display: none;
+		margin-left: 0;
+	}
+
+	#header ul li {
+		margin: 0 10px 20px 10px;
 	}
 
 	#content-header h2 {
