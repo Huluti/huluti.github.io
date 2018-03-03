@@ -170,17 +170,17 @@ body {
 	font-size: 24px;
 }
 
-#products {
+#ressources-block {
 	display: flex;
 	justify-content: space-between;
 }
 
-.product {
+.ressource {
 	width: 33.33%;
 	height: 300px;
 }
 
-.product a {
+.ressource a {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -192,19 +192,19 @@ body {
 	text-decoration: none;
 }
 
-.product .price {
+.ressource .price {
 	padding: 5px 10px;
 	margin-bottom: 10px;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-.product h4 {
+.ressource h4 {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
 
-.product:nth-child(1) {
+.ressource:nth-child(1) {
 	background-color: #0fbcf9;
 }
 
@@ -370,11 +370,11 @@ input[type="email"], input[type="text"] {
 		height: 350px;
 	}
 
-	#products {
+	#ressources {
 		flex-direction: column;
 	}
 
-	.product {
+	.ressource {
 		width: 100%;
 	}
 
