@@ -279,7 +279,7 @@ small {
 	font-size: 12px;
 }
 
-input[type="email"] {
+input[type="email"], input[type="text"] {
 	width: 400px;
 	margin-bottom: 20px;
 	padding: 10px 0;
@@ -394,7 +394,7 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 480px) {
-	input[type="email"] {
+	input[type="email"], input[type="text"] {
 		width: 300px;
 	}
 
@@ -409,7 +409,7 @@ input[type="email"] {
 		padding-right: 20px;
 	}
 
-	input[type="email"] {
+	input[type="email"], input[type="text"] {
 		width: 250px;
 	}
 }
