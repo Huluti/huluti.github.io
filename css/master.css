@@ -221,20 +221,6 @@ body {
 	background-color: #0fbcf9;
 }
 
-#newsletter {
-	text-align: center;
-	font-size: 24px;
-}
-
-#newsletter p {
-	margin-bottom: 20px;
-}
-
-#newsletter small {
-	display: block;
-	margin-top: 20px;
-}
-
 #contact {
 	display: flex;
 	justify-content: space-between;
