@@ -135,7 +135,7 @@ body {
 
 #content-header a {
 	display: block;
-	margin-bottom: 40px;
+	
 	font-size: 24px;
 }
 
@@ -172,7 +172,7 @@ body {
 
 .project:nth-child(3) {
 	background-image: url('../img/coulr.png');
-	background-color: #fff4ef;
+	background-color: #ffffff;
 }
 
 .project:nth-child(1) a, .project:nth-child(3) a  {
@@ -417,7 +417,7 @@ input[type="email"], input[type="text"] {
 		margin-right: 0;
 		margin-bottom: 40px;
 	}
-	
+
 	input[type="email"], input[type="text"] {
 		width: 300px;
 	}
