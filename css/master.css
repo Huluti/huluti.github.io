@@ -118,6 +118,21 @@ body {
 	font-size: 64px;
 }
 
+#content-header #skills {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+}
+
+#content-header #skills ul {
+	margin-left: 0;
+	margin-right: 40px;
+}
+
+#content-header #skills li {
+	list-style: none;
+}
+
 #content-header a {
 	display: block;
 	margin-bottom: 40px;
@@ -393,6 +408,16 @@ input[type="email"], input[type="text"] {
 }
 
 @media only screen and (max-width: 480px) {
+	#content-header #skills {
+		margin-bottom: 0;
+		flex-direction: column;
+	}
+	
+	#content-header #skills ul {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	
 	input[type="email"], input[type="text"] {
 		width: 300px;
 	}
