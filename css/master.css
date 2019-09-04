@@ -86,7 +86,6 @@ body {
 
 #header h1 {
 	font-size: 36px;
-	color: #454545;
 }
 
 #header ul li {
@@ -138,6 +137,49 @@ body {
 	font-size: 24px;
 }
 
+#hposolutions {
+	background: rgb(162,155,254);
+	background: linear-gradient(45deg, rgba(162,155,254,1) 20%, rgba(85,239,196,1) 100%);
+	color: #ffffff;
+}
+
+#hposolutions h3 {
+	margin-bottom: 20px;
+}
+
+#freelance-logo {
+	height: 72px;
+	margin-bottom: 40px;
+}
+
+#freelance-actions .btn {
+	margin-bottom: 40px;
+}
+
+#freelance-actions .btn:first-of-type {
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+#services {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -15px 40px -15px;
+}
+
+.service {
+	padding: 0 15px;
+}
+
+.service h3, .service i {
+	display: inline-block;
+}
+
+.service i {
+	margin-right: 10px;
+	font-size: 32px;
+}
+
 #projects {
 	margin-bottom: 40px;
 }
@@ -159,9 +201,8 @@ body {
 }
 
 .project:nth-child(1) {
-	background-size: auto 64px;
-	background-image: url('../img/swiftea.png');
-	background-color: #f2f2f2;
+	background-image: url('../img/urlr.png');
+	background-color: #f9f9f9;
 }
 
 .project:nth-child(2) {
@@ -170,8 +211,9 @@ body {
 }
 
 .project:nth-child(3) {
-	background-image: url('../img/urlr.png');
-	background-color: #ffffff;
+	background-size: auto 64px;
+	background-image: url('../img/swiftea.png');
+	background-color: #f2f2f2;
 }
 
 .project:nth-child(1) a, .project:nth-child(3) a  {
@@ -193,7 +235,7 @@ body {
 	font-size: 24px;
 }
 
-#travail h4 {
+#projets h4 {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
@@ -267,6 +309,10 @@ input[type="email"], input[type="text"] {
 	color: inherit;
 }
 
+a.btn {
+	display: inline-block;
+}
+
 .btn {
 	min-width: 200px;
 	padding: 15px 20px;
@@ -286,6 +332,12 @@ input[type="email"], input[type="text"] {
 	color: #ffffff;
 }
 
+.btn-white {
+	background-color: #ffffff;
+	color: #454545;
+	border-color: #ffffff;
+}
+
 .btn:hover {
 	background-color: #454545;
 	color: #ffffff;
@@ -293,6 +345,11 @@ input[type="email"], input[type="text"] {
 
 .btn-alt:hover {
 	background-color: transparent;
+	color: #454545;
+}
+
+.btn-white:hover {
+	background-color: #ffffff;
 	color: #454545;
 }
 
@@ -338,6 +395,16 @@ input[type="email"], input[type="text"] {
 
 	#content-header a {
 		font-size: 18px;
+	}
+
+	#services {
+		flex-wrap: wrap;
+		margin: 0 0 20px 0;
+	}
+
+	.service {
+		padding: 0;
+		margin-bottom: 20px;
 	}
 
 	.project {
