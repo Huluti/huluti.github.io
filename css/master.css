@@ -340,13 +340,13 @@ a.btn {
 .btn {
 	min-width: 200px;
 	padding: 15px 20px;
-	
+
 	border: 1px solid #454545;
 	text-decoration: none;
 	text-align: center;
 	background-color: transparent;
 	color: #000000;
-	transition: background-color .2s;
+	transition: all .2s;
 	cursor: pointer;
 	font-size: inherit;
 }
@@ -373,8 +373,7 @@ a.btn {
 }
 
 .btn-white:hover {
-	background-color: #ffffff;
-	color: #454545;
+	border-color: #454545;
 }
 
 /* MEDIA QUERIES */
