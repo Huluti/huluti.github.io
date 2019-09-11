@@ -175,13 +175,15 @@ body {
 
 #freelance-clients {
 	margin-bottom: 40px;
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
 #freelance-clients img {
+	vertical-align: middle;
+	margin-bottom: 20px;
 	margin-right: 20px;
-	height: 35px;
+	max-height: 100px;
 }
 
 #services {
