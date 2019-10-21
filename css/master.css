@@ -348,7 +348,6 @@ a.btn {
 .btn {
 	min-width: 200px;
 	padding: 15px 20px;
-
 	border: 1px solid #454545;
 	text-decoration: none;
 	text-align: center;
@@ -357,6 +356,7 @@ a.btn {
 	transition: all .2s;
 	cursor: pointer;
 	font-size: inherit;
+	white-space: nowrap;
 }
 
 .btn-alt {
