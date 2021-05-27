@@ -217,7 +217,7 @@ body {
 	width: 50%;
 	height: 400px;
 	font-size: 20px;
-	color: #ffffff;
+	color: #454545;
 	background-repeat: no-repeat;
 	background-size: auto 128px;
 	background-position: center;
@@ -233,18 +233,14 @@ body {
 }
 
 .project:nth-child(2) {
-	background-image: url('../img/imeditor.png');
-	background-color: #f1513c;
+	background-image: url('../img/curtail.svg');
+	background-color: #e3e3e3;
 }
 
 .project:nth-child(3) {
 	background-size: auto 64px;
 	background-image: url('../img/swiftea.png');
 	background-color: #f2f2f2;
-}
-
-.project:nth-child(1) a, .project:nth-child(3) a  {
-	color: #454545;
 }
 
 .project a {
@@ -254,7 +250,7 @@ body {
 	padding: 20px;
 	height: 100%;
 	width: 100%;
-	color: #ffffff;
+	color: #454545;
 	text-decoration: none;
 }
 
