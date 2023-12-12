@@ -30,62 +30,80 @@
             <h3>Projets</h3>
             <div id="projects">
                 <div class="project">
-                    <a href="https://urlr.me" target="_blank">
+                    <div class="project-tags">
+                        <span class="tag tag-main">SaaS</span>
+                    </div>
+                    <div class="project-body">
                         <img src="img/urlr.png" height="60" width="60" alt="URLR">
-                        <div>
-                            <h4>Réducteur de lien</h4>
+                        <a href="https://urlr.me" target="_blank">
+                            <b>Réducteur de lien</b>
                             Créateur de URLR
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="project">
-                    <a href="https://github.com/Huluti/Curtail" target="_blank">
+                    <div class="project-tags">
+                        <span class="tag tag-main">Application</span><span class="tag">Linux</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
                         <img src="img/curtail.svg" height="60" width="60" alt="Curtail">
-                        <div>
-                            <h4>Compresseur d'image simple & utile</h4>
+                        <a href="https://github.com/Huluti/Curtail" target="_blank">
+                            <b>Compresseur d'image simple & utile</b>
                             Créateur de Curtail
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="project">
-                    <a href="https://github.com/Swiftea" target="_blank">
-                        <img src="img/swiftea.png" height="60" width="60" alt="Swiftea">
-                        <div>
-                            <h4>Moteur de recherche open source</h4>
-                            Co-créateur de Swiftea
-                        </div>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://imeditor.github.io" target="_blank">
-                        <img src="img/imeditor.png" height="60" width="60" alt="ImEditor">
-                        <div>
-                            <h4>Éditeur d'image simple et polyvalent</h4>
-                            Créateur de ImEditor
-                        </div>
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/Huluti/Coulr" target="_blank">
+                    <div class="project-tags">
+                        <span class="tag tag-main">Application</span><span class="tag">Linux</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
                         <img src="img/coulr.png" height="60" width="60" alt="Coulr">
-                        <div>
+                        <a href="https://github.com/Huluti/Coulr" target="_blank">
                             <h4>Boite à couleurs pour les développeurs</h4>
                             Créateur de Coulr
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-                <div class="project">
-                    <a href="https://hugo-posnic.fr/TuxHomepage" target="_blank">
+                <div class="project not-active" title="Développement stoppé">
+                    <div class="project-tags">
+                        <span class="tag tag-main">Web</span><span class="tag">Ligne de commande</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
+                        <img src="img/swiftea.png" height="60" width="60" alt="Swiftea">
+                        <a href="https://github.com/Swiftea" target="_blank">
+                            <b>Moteur de recherche open source</b>
+                            Co-créateur de Swiftea
+                        </a>
+                    </div>
+                </div>
+                <div class="project not-active" title="Développement stoppé">
+                    <div class="project-tags">
+                        <span class="tag tag-main">Application</span><span class="tag">Linux</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
+                        <img src="img/imeditor.png" height="60" width="60" alt="ImEditor">
+                        <a href="https://imeditor.github.io" target="_blank">
+                            <b>Éditeur d'image simple et polyvalent</b>
+                            Créateur de ImEditor
+                        </a>
+                    </div>
+                </div>
+                <div class="project not-active" title="Développement stoppé">
+                    <div class="project-tags">
+                        <span class="tag tag-main">Web</span><span class="tag">Linux</span><span class="tag">Open Source</span>
+                    </div>
+                    <div class="project-body">
                         <img src="img/tux.svg" height="60" width="60" alt="TuxHomepage">
-                        <div>
-                            <h4>Page d'accueil pour les distributions Linux</h4>
+                        <a href="https://hugo-posnic.fr/TuxHomepage" target="_blank">
+                            <b>Page d'accueil pour les distributions Linux</b>
                             Créateur de TuxHomepage
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="project-block">
-                <h4>Expériences</h4>
+            <div>
+                <h3>Expériences</h3>
                 <ul>
                     <li><b>Integration Software Engineer</b> chez <a href="https://www.fintecture.com">Fintecture</a> à Paris depuis mai 2021</li>
                     <li><b>Développeur web</b> chez <a href="https://www.altaisweb.fr">Altaïs</a> à Orléans entre octobre 2019 et mai 2021</li>
@@ -96,8 +114,9 @@
                     <li><b>Développeur bénévole</b> pour la distribution Linux <a href="https://manjaro.org">Manjaro</a> de décembre 2016 à décembre 2017</li>
                 </ul>
             </div>
-            <div class="project-block">
-                <h4>Mes contributions open-source favorites</h4>
+            <hr>
+            <div>
+                <h3>Mes contributions open-source favorites</h3>
                 <ul>
                     <li>Création de <a href="https://gitlab.manjaro.org/applications/manjaro-hello">manjaro-hello</a>, interface d'accueil de la distribution Linux <abbr title="Distribution Linux basée sur ArchLinux">Manjaro</abbr></li>
                     <li>Création de <a href="https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-web-repo">manjaro-web-repo</a>, outil de surveillance des miroirs Manjaro</li>
@@ -107,8 +126,9 @@
                 <br>
                 <a href="https://github.com/Huluti">Encore plus sur GitHub →</a>
             </div>
-            <div class="project-block">
-                <h4>On parle de moi - Articles</h4>
+            <hr>
+            <div>
+                <h3>On parle de moi - Articles</h3>
                 <ul>
                     <li>OMG!Ubuntu! : <a href="https://www.omgubuntu.co.uk/2022/07/curtail-is-an-image-compressor-app-for-ubuntu">Curtail is an Awesome Image Compressor Tool for Linux</a></li>
                     <li>OMG!Ubuntu! : <a href="https://www.omgubuntu.co.uk/2019/10/imcompressor-image-optimizer-for-linux">ImCompressor is a New, User-Friendly Image Compressor for Linux</a></li>
