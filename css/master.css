@@ -151,21 +151,6 @@ body {
 	border-radius: 8px;
 }
 
-.project.not-active {
-	background: repeating-linear-gradient(
-		45deg,
-		#ffffff,
-		#ffffff 10px,
-		#f5f5f5 10px,
-		#f5f5f5 20px
-	);
-	opacity: 0.7;
-}
-
-.project:not(.not-active):hover {
-	background-color: #f2f2f2;
-}
-
 .project .project-tags {
 	display: flex;
 	align-items: center;
@@ -177,11 +162,22 @@ body {
 	font-size: 14px;
 	border-radius: 4px;
 	background-color: #f2f2f2;
+	font-weight: bold;
 }
 
 .project .project-tags .tag.tag-main {
-	background-color: #4b91ff;
-	color: #fff;
+	background-color: #deebff;
+	color: #4b91ff;
+}
+
+.project .project-tags .tag.tag-success {
+	background-color: #deffeb;
+	color: #2ebe65;
+}
+
+.project .project-tags .tag.tag-error {
+	background-color: #ffdada;
+	color: #ff4b4b;
 }
 
 .project .project-body {
