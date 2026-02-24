@@ -137,8 +137,9 @@ body {
 }
 
 .city {
-	color: #b467e0;
+	color: #5199eb;
 	font-weight: bold;
+	font-size: 1.2em;
 }
 
 .status-dot {
