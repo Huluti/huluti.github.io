@@ -49,6 +49,10 @@ table {
 
 /* STYLE */
 
+:root {
+    --primary-color: #5199eb;
+}
+
 html, body {
 	height: 100%;
 }
@@ -63,10 +67,17 @@ html {
 }
 
 body {
+    height: 100%;
 	background-color: #ffffff;
 	color: #454545;
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
+}
+
+#wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .section {
@@ -85,6 +96,10 @@ body {
 	align-items: center;
 }
 
+#header a {
+	color: inherit;
+}
+
 #header h1 {
 	font-size: 32px;
 }
@@ -98,15 +113,6 @@ body {
 
 #header ul li:first-child {
 	margin-left: 0;
-}
-
-#header ul li a {
-	text-decoration: none;
-	color: inherit;
-}
-
-#header ul li a:hover {
-	text-decoration: underline;
 }
 
 /* Content */
@@ -142,7 +148,7 @@ body {
 }
 
 .city {
-	color: #5199eb;
+	color: var(--primary-color);
 	font-weight: bold;
 	font-size: 1.2em;
 }
@@ -221,6 +227,8 @@ body {
 
 .project a {
 	text-decoration: none;
+	color: inherit;
+	font-weight: normal;
 }
 
 .project a b {
@@ -287,7 +295,6 @@ hr {
 	background-color: #f2f2f2;
 }
 
-
 img {
 	max-width: 100%;
   	height: auto;
@@ -309,8 +316,16 @@ ul li:not(:last-child) {
 }
 
 a {
-	color: #454545;
-	text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration-thickness: .14em;
+    text-underline-offset: .24em;
+    text-decoration-color: #ccc;
+    transition: text-decoration-color 1s ease-in-out;
+
+    &:hover {
+        text-decoration-color: var(--primary-color);
+    }
 }
 
 b {
@@ -349,7 +364,7 @@ a.btn {
 	min-width: 200px;
 	padding: 15px 20px;
 	border-radius: 40px;
-	border: 4px solid #5199eb;
+	border: 4px solid var(--primary-color);
 	text-decoration: none;
 	text-align: center;
 	transition: all .2s;
@@ -358,10 +373,10 @@ a.btn {
 	white-space: nowrap;
 	font-weight: bold;
 	background-color: transparent;
-	color: #5199eb;
+	color: var(--primary-color);
 
 	&:hover {
-		background-color: #5199eb;
+		background-color: var(--primary-color);
 		color: #ffffff;
 	}
 }

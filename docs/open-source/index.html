@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hugo Posnic - {{ title }} </title>
-    {% if headline %}
-        <meta name="description" content="{{ headline }}">
-    {% endif %}
+    <title>Hugo Posnic - Open Source Work </title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -27,7 +25,23 @@
         </header>
 
         <main id="content">
-            {{ content | safe }}
+            
+<section id="content-header" class="section section-bg">
+    <h2>Open Source Work</h2>
+</section>
+
+<section class="section">
+    <div>
+        <h3>My favorite open-source contributions</h3>
+        <ul>
+            <li>Creation of <a href="https://gitlab.manjaro.org/applications/manjaro-hello">manjaro-hello</a>, welcome interface of the <abbr title="Linux Distribution based on ArchLinux">Manjaro</abbr> Linux distribution</li>
+            <li>Creation of <a href="https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-web-repo">manjaro-web-repo</a>, Manjaro mirrors monitoring tool</li>
+            <li>Migration of the <a href="https://github.com/Kilian/Trimage/pull/47">Trimage</a> software to Python3 and Qt5</li>
+            <li><a href="https://gitlab.gnome.org/GNOME/gnome-music/merge_requests/486#note_588661">First contribution</a> to the GNOME project</li>
+        </ul>
+    </div>
+</section>
+
         </main>
 
         <footer id="footer" class="section section-bg">
