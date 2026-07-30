@@ -1,0 +1,30 @@
+{
+  "name": "huluti.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "homepage": "https://github.com/Huluti/huluti.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/Huluti/huluti.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huluti/huluti.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Hugo Posnic",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx eleventy --serve",
+    "build": "npx eleventy",
+    "prettier": "npx prettier --write .",
+    "deploy": "npm run build && npx gh-pages -d dist -b pages"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "gh-pages": "^6.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  }
+}

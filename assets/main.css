@@ -116,6 +116,11 @@ body {
 	font-size: 24px;
 }
 
+#content h4 {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
 /* Header */
 
 #content-header h2 {
@@ -320,6 +325,10 @@ b {
 
 .mb-40 {
 	margin-bottom: 40px !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
 }
 
 .text-bold {

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hugo Posnic - {{ title }} </title>
+    {% if headline %}
+        <meta name="description" content="{{ headline }}">
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="alternate" hreflang="fr" href="https://hugo-posnic.fr/">
+</head>
+<body>
+    <header id="header" class="section section-bg">
+        <h1>Hugo Posnic</h1>
+        <ul>
+            <li><a href="#projets">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="content">
+        {{ content | safe }}
+
+        <section id="contact" class="section section-bg">
+            <p>Don't hesitate to contact me if you'd like to discuss a project, or learn more about me!</p>
+            <a href="mailto:hugo.posnic@protonmail.com" class="btn">👋 Contact me</a>
+        </section>
+
+        <footer id="footer" class="section section-bg">
+            <p>© 2026 Hugo Posnic, All rights reserved.</p>
+            <div>
+                <a rel="me" href="https://mastodon.social/@hugoposnic" target="_blank"><img src="/assets/img/social/mastodon.svg" height="24" width="24" alt="Mastodon"></a>
+                <a href="https://www.linkedin.com/in/hugoposnic" target="_blank"><img src="/assets/img/social/linkedin.svg" height="24" width="24" alt="LinkedIn"></a>
+                <a href="https://codeberg.org/hugoposnic" target="_blank"><img src="/assets/img/social/codeberg.svg" height="24" width="24" alt="Codeberg"></a>
+                <a href="https://github.com/Huluti" target="_blank"><img src="/assets/img/social/github.svg" height="24" width="24" alt="GitHub"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
