@@ -7,14 +7,29 @@ title: Open Source Work
     <h2>Open Source Work</h2>
 </section>
 
-<section class="section">
-    <div>
-        <h3>My favorite open-source contributions</h3>
-        <ul>
-            <li>Creation of <a href="https://gitlab.manjaro.org/applications/manjaro-hello">manjaro-hello</a>, welcome interface of the <abbr title="Linux Distribution based on ArchLinux">Manjaro</abbr> Linux distribution</li>
-            <li>Creation of <a href="https://gitlab.manjaro.org/tools/maintenance-tools/manjaro-web-repo">manjaro-web-repo</a>, Manjaro mirrors monitoring tool</li>
-            <li>Migration of the <a href="https://github.com/Kilian/Trimage/pull/47">Trimage</a> software to Python3 and Qt5</li>
-            <li><a href="https://gitlab.gnome.org/GNOME/gnome-music/merge_requests/486#note_588661">First contribution</a> to the GNOME project</li>
-        </ul>
-    </div>
+<section id="contributions" class="section">
+    {% for topic in contributions.topics %}
+        <section>
+            <h2>{{ topic.name }}</h2>
+            {% for project in topic.projects %}
+                <div class="mb-40">
+                    <h3>{{ project.name }}</h3>
+                    {% for item in project.items %}
+                        <p class="mb-20">
+                            <span class="badge badge-{{ item.type }}">
+                                {{ "Issue" if item.type == "issue" else "MR" }}
+                            </span>
+                            <span class="repo-name">{{ item.repo }}</span>
+                            <a href="{{ item.url }}">{{ item.title }}</a>
+                            {% if item.fixes_url %}
+                                → fixes <a class="related-link" href="{{ item.fixes_url }}">{{ item.fixes_label }}</a>
+                            {% elif item.fixed_by_url %}
+                                → fixed by <a class="related-link" href="{{ item.fixed_by_url }}">{{ item.fixed_by_label }}</a>
+                            {% endif %}
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+    {% endfor %}
 </section>

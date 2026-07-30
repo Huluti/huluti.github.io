@@ -1,0 +1,64 @@
+{
+  "topics": [
+    {
+      "name": "Linux / Linux Mobile",
+      "projects": [
+        {
+          "name": "GNOME",
+          "items": [
+            {
+              "type": "issue",
+              "repo": "gnome-control-center",
+              "title": "UI: Wifi listing cropped on borders/shadows lost",
+              "url": "https://gitlab.gnome.org/GNOME/gnome-control-center/-/work_items/3701"
+            },
+            {
+              "type": "mr",
+              "repo": "gnome-music",
+              "title": "songsview: fix a TypeError",
+              "url": "https://gitlab.gnome.org/GNOME/gnome-music/-/merge_requests/486"
+            }
+          ]
+        },
+        {
+          "name": "postmarketOS",
+          "items": [
+            {
+              "type": "issue",
+              "repo": "pmaports",
+              "title": "Empty applications list in GNOME Settings and Ressources (at least)",
+              "url": "https://gitlab.postmarketos.org/postmarketOS/duranium-build/-/work_items/64"
+            },
+            {
+              "type": "mr",
+              "repo": "pmaports",
+              "title": "main/postmarketos-config-nftables: add rule for localsend ",
+              "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/merge_requests/9153"
+            },
+            {
+              "type": "issue",
+              "repo": "duranium-build",
+              "title": "udisks/phosh prompting to open sysext and confext loopback devices on boot",
+              "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4767",
+              "fixed_by_url": "https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/106204",
+              "fixed_by_label": "aports!106204"
+            }
+          ]
+        },
+        {
+          "name": "Alpine Linux",
+          "items": [
+            {
+              "type": "mr",
+              "repo": "aports",
+              "title": "community/gnome-control-center: depend on malcontent",
+              "url": "https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/106204",
+              "fixes_url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4767",
+              "fixes_label": "duranium-build#64"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
