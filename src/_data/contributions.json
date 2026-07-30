@@ -38,7 +38,7 @@
               "type": "issue",
               "repo": "pmaports",
               "title": "Empty applications list in GNOME Settings and Ressources (at least)",
-              "url": "https://gitlab.postmarketos.org/postmarketOS/duranium-build/-/work_items/64"
+              "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4797"
             },
             {
               "type": "mr",
@@ -64,7 +64,7 @@
               "repo": "aports",
               "title": "community/gnome-control-center: depend on malcontent",
               "url": "https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/106204",
-              "fixes_url": "https://gitlab.postmarketos.org/postmarketOS/duranium-build/-/work_items/64",
+              "fixes_url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4797",
               "fixes_label": "duranium-build#64"
             }
           ]
