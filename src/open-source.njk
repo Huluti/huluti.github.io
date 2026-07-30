@@ -9,7 +9,7 @@ title: Open Source Work
 
 <section id="contributions" class="section">
     {% for topic in contributions.topics %}
-        <section>
+        <section id="{{ topic.name| slug }}" class="mb-40">
             <h2>{{ topic.name }}</h2>
             {% for project in topic.projects %}
                 <div class="mb-40">

@@ -21,6 +21,17 @@
           ]
         },
         {
+          "name": "Phosh",
+          "items": [
+            {
+              "type": "issue",
+              "repo": "phosh",
+              "title": "\"Uninstall\" action does nothing for a web app installed with Gnome Web",
+              "url": "https://gitlab.gnome.org/World/Phosh/phosh/-/work_items/1337"
+            }
+          ]
+        },
+        {
           "name": "postmarketOS",
           "items": [
             {
