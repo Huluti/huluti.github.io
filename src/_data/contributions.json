@@ -13,6 +13,12 @@
               "url": "https://gitlab.gnome.org/GNOME/gnome-control-center/-/work_items/3701"
             },
             {
+              "type": "issue",
+              "repo": "resources",
+              "title": "Musl incompatibility - Empty applications list in the flatpak version of Resources",
+              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/work_items/699"
+            },
+            {
               "type": "mr",
               "repo": "gnome-music",
               "title": "songsview: fix a TypeError",
