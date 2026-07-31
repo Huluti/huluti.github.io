@@ -24,7 +24,9 @@
               "type": "mr",
               "repo": "resources",
               "title": "Fix musl incompatibility in flatpak by using the flatpak libraries",
-              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/merge_requests/705"
+              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/merge_requests/705",
+              "fixes_url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/work_items/699",
+              "fixes_label": "resources#699"
             },
             {
               "type": "mr",
