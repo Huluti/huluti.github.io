@@ -16,7 +16,15 @@
               "type": "issue",
               "repo": "resources",
               "title": "Musl incompatibility - Empty applications list in the flatpak version of Resources",
-              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/work_items/699"
+              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/work_items/699",
+              "fixed_by_url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/merge_requests/705",
+              "fixed_by_label": "resources!705"
+            },
+            {
+              "type": "mr",
+              "repo": "resources",
+              "title": "Fix musl incompatibility in flatpak by using the flatpak libraries",
+              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/merge_requests/705"
             },
             {
               "type": "mr",
