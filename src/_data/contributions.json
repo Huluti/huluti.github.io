@@ -30,6 +30,12 @@
             },
             {
               "type": "mr",
+              "repo": "resources",
+              "title": "Add Phosh/Linux Mobile AppIDs in APP_ID_BLOCKLIST",
+              "url": "https://gitlab.gnome.org/GNOME/Incubator/resources/-/merge_requests/706"
+            },
+            {
+              "type": "mr",
               "repo": "gnome-music",
               "title": "songsview: fix a TypeError",
               "url": "https://gitlab.gnome.org/GNOME/gnome-music/-/merge_requests/486"
