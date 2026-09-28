@@ -17,8 +17,7 @@
   "scripts": {
     "dev": "npx eleventy --serve",
     "build": "npx eleventy",
-    "prettier": "npx prettier --write .",
-    "deploy": "npm run build && npx gh-pages -d dist -b pages"
+    "prettier": "npx prettier --write ."
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.6"
