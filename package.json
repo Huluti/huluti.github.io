@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx eleventy --serve",
-    "build": "npx eleventy",
+    "build": "npx eleventy && npx prettier --write .",
     "prettier": "npx prettier --write ."
   },
   "dependencies": {
