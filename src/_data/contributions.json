@@ -72,9 +72,7 @@
               "type": "issue",
               "repo": "duranium-build",
               "title": "udisks/phosh prompting to open sysext and confext loopback devices on boot",
-              "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4767",
-              "fixed_by_url": "https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/106204",
-              "fixed_by_label": "aports!106204"
+              "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/work_items/4767"
             }
           ]
         },
